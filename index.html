@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Portfolio BTS SIO option SISR de Yann Kounkoud : projets E6, stages, tableau de synthèse E5, compétences et veille technologique.">
+<meta name="description" content="Portfolio BTS SIO option SISR de Yann Kounkoud : projets E6, stages, tableau de synthèse E5, compétences et certifications.">
 <meta name="author" content="Yann Kounkoud">
 <title>Portfolio Yann Kounkoud</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,13 +31,6 @@
   --wip-line:#D9A400;
   --plan:#56636A;
   --plan-soft:#E6EBEA;
-  --console-bg:#0E1417;
-  --console-line:#24323A;
-  --console-ink:#D3E4E5;
-  --console-dim:#809A9E;
-  --console-accent:#46C6CF;
-  --console-ok:#7ED69B;
-  --console-wip:#F2C54E;
   --shadow:0 1px 0 rgba(19,26,29,.04), 0 14px 34px -20px rgba(19,26,29,.28);
   --radius:6px;
   --header-h:64px;
@@ -67,8 +60,6 @@
     --wip-line:#F2C54E;
     --plan:#A2B1B5;
     --plan-soft:#1D272C;
-    --console-bg:#080D10;
-    --console-line:#22303A;
     --shadow:0 1px 0 rgba(0,0,0,.35), 0 16px 38px -20px rgba(0,0,0,.75);
   }
 }
@@ -93,8 +84,6 @@
   --wip-line:#F2C54E;
   --plan:#A2B1B5;
   --plan-soft:#1D272C;
-  --console-bg:#080D10;
-  --console-line:#22303A;
   --shadow:0 1px 0 rgba(0,0,0,.35), 0 16px 38px -20px rgba(0,0,0,.75);
 }
 
@@ -150,11 +139,8 @@ abbr[title]{text-decoration:none;cursor:help}
 .prose strong{color:var(--ink);font-weight:600}
 
 /* ---------- Héro ---------- */
-.hero{display:grid;gap:clamp(32px,5vw,56px);align-items:center;padding-block:clamp(40px,7vw,88px) clamp(48px,7vw,96px);scroll-margin-top:var(--header-h)}
-@media (min-width:960px){.hero{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)}}
+.hero{padding-block:clamp(40px,7vw,88px) clamp(48px,7vw,96px);scroll-margin-top:var(--header-h)}
 .hero h1{margin-top:18px;font-size:clamp(2.8rem,7.2vw,5.4rem);font-weight:800;font-stretch:125%;line-height:.92;letter-spacing:-.02em}
-.hero .role{margin-top:18px;font:650 clamp(1.1rem,2.2vw,1.42rem)/1.3 var(--font-display);font-stretch:108%;color:var(--accent)}
-.hero .lead{margin-top:14px;max-width:58ch;font-size:clamp(1.02rem,1.4vw,1.14rem);color:var(--ink-2)}
 .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px 28px;margin:28px 0 0;padding-top:20px;border-top:1px solid var(--line)}
 .facts dt{font:500 11.5px/1.3 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .facts dd{margin:4px 0 0;font-weight:500;color:var(--ink);line-height:1.45}
@@ -167,16 +153,6 @@ abbr[title]{text-decoration:none;cursor:help}
 .link-arrow{font-weight:600;text-decoration:none}
 .link-arrow:hover{text-decoration:underline}
 
-.console{background:var(--console-bg);color:var(--console-ink);border:1px solid var(--console-line);border-radius:8px;box-shadow:var(--shadow);overflow:hidden}
-.console-bar{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 12px;padding:10px 14px;border-bottom:1px solid var(--console-line);font:500 11.5px/1.3 var(--font-mono);letter-spacing:.04em;color:var(--console-dim)}
-.console pre{margin:0;padding:16px 16px 18px;overflow-x:auto;font:400 12.5px/1.75 var(--font-mono);white-space:pre;color:var(--console-ink)}
-.console .c-dim{color:var(--console-dim)}
-.console .c-acc{color:var(--console-accent)}
-.console .c-ok{color:var(--console-ok)}
-.console .c-wip{color:var(--console-wip)}
-.console .cursor{display:inline-block;width:.6em;height:1.1em;vertical-align:-.2em;background:var(--console-ink);animation:blink 1.1s steps(1) infinite}
-@keyframes blink{50%{opacity:0}}
-.console-cap{margin-top:12px;max-width:54ch;font-size:13.5px;color:var(--muted)}
 
 /* ---------- Profil ---------- */
 .split{display:grid;gap:clamp(28px,5vw,64px)}
@@ -377,29 +353,6 @@ abbr[title]{text-decoration:none;cursor:help}
 .cert p{color:var(--ink-2);font-size:15px;max-width:70ch;margin-top:6px}
 .cert-side{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center}
 .cert-side .when{font:500 12.5px/1 var(--font-mono);color:var(--ink)}
-.cert-group{font:600 12px/1.4 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:34px 0 4px}
-.cert-group:first-child{margin-top:0}
-
-/* ---------- Veille ---------- */
-.veille-grid{display:grid;gap:clamp(32px,5vw,56px)}
-@media (min-width:960px){.veille-grid{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}}
-.question{font:650 clamp(1.15rem,2vw,1.4rem)/1.35 var(--font-display);font-stretch:104%;color:var(--ink);padding-left:16px;border-left:3px solid var(--accent)}
-.method{margin:0;display:grid;gap:14px}
-.method div{display:grid;gap:4px}
-.method dt{font:600 11.5px/1.4 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-.method dd{margin:0;color:var(--ink-2)}
-.news{display:grid}
-.news li{list-style:none;display:grid;grid-template-columns:104px minmax(0,1fr);gap:16px;padding-block:14px;border-top:1px solid var(--line)}
-.news li:first-child{border-top:0;padding-top:0}
-.news time{font:600 12.5px/1.6 var(--font-mono);color:var(--accent);font-variant-numeric:tabular-nums}
-.news h3{font:650 1rem/1.35 var(--font-display);font-stretch:102%}
-.news p{margin-top:4px;color:var(--ink-2);font-size:15px}
-@media (max-width:480px){.news li{grid-template-columns:1fr;gap:4px}}
-.takeaways{display:grid;gap:16px;margin-top:clamp(32px,5vw,48px)}
-@media (min-width:860px){.takeaways{grid-template-columns:repeat(3,minmax(0,1fr))}}
-.takeaway{padding:18px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
-.takeaway h3{font-size:1rem;font-weight:700;font-stretch:104%;margin-bottom:6px}
-.takeaway p{color:var(--ink-2);font-size:15px}
 
 /* ---------- Contact ---------- */
 .contact{display:grid;gap:28px}
@@ -426,7 +379,7 @@ abbr[title]{text-decoration:none;cursor:help}
   body{background:#fff;color:#000;font-size:11pt}
   .section{padding-block:22px}
   .rea,.feature,.bloc,.cert{break-inside:avoid}
-  .console,.feature{box-shadow:none}
+  .feature{box-shadow:none}
   a{color:inherit;text-decoration:none}
 }
 </style>
@@ -455,7 +408,6 @@ abbr[title]{text-decoration:none;cursor:help}
       <a href="#synthese">Synthèse E5</a>
       <a href="#competences">Compétences</a>
       <a href="#certifications">Certifications</a>
-      <a href="#veille">Veille</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -468,8 +420,6 @@ abbr[title]{text-decoration:none;cursor:help}
     <div>
       <p class="eyebrow">BTS SIO · option SISR · session 2027</p>
       <h1 id="hero-title">Yann<br>Kounkoud</h1>
-      <p class="role">Technicien systèmes et réseaux en formation</p>
-      <p class="lead">Étudiant en 2<sup>e</sup> année de BTS SIO option SISR à l’ESUP Puteaux. Je monte des maquettes d’infrastructure complètes (virtualisation, réseau segmenté, annuaire, supervision) et je les documente pour qu’un autre technicien puisse les reprendre.</p>
       <dl class="facts">
         <div><dt>Objectif</dt><dd>Alternance en support ou administration systèmes et réseaux</dd></div>
         <div><dt>Expérience</dt><dd>Stages chez Sopra Steria, ITW Automotive et Its Groupe Tech</dd></div>
@@ -482,26 +432,6 @@ abbr[title]{text-decoration:none;cursor:help}
         <a class="link-arrow" href="#contact">Me contacter →</a>
       </div>
     </div>
-
-    <figure style="margin:0">
-      <div class="console" role="img" aria-label="Extrait de la console du pare-feu pfSense du projet NégoTech : cinq interfaces, WAN en DHCP, puis ADMIN 10.10.10.254/24, SERVEURS 10.10.20.254/24, UTILISATEURS 10.10.30.254/24 et DMZ 10.10.40.254/24. Machine virtuelle 100 FW-EDGE en service, machine 101 DC1-WIN en installation.">
-        <div class="console-bar" aria-hidden="true"><span>noVNC · VM 100 · FW-EDGE</span><span>Proxmox VE 9.2</span></div>
-<pre aria-hidden="true"><span class="c-dim">*** pfSense 2.8.1-RELEASE (amd64) ***</span>
-
- WAN  -> vtnet0 -> DHCP             <span class="c-dim"># NAT VMware</span>
- LAN  -> vtnet1 -> <span class="c-acc">10.10.10.254/24</span>  <span class="c-dim"># ADMIN</span>
- OPT1 -> vtnet2 -> <span class="c-acc">10.10.20.254/24</span>  <span class="c-dim"># SERVEURS</span>
- OPT2 -> vtnet3 -> <span class="c-acc">10.10.30.254/24</span>  <span class="c-dim"># UTILISATEURS</span>
- OPT3 -> vtnet4 -> <span class="c-acc">10.10.40.254/24</span>  <span class="c-dim"># DMZ</span>
-
-<span class="c-dim"># machines virtuelles du nœud pve</span>
- 100  FW-EDGE   pfSense CE        <span class="c-ok">en service</span>
- 101  DC1-WIN   Windows Srv 2022  <span class="c-wip">installation</span>
-
- Enter an option: <span class="cursor"></span></pre>
-      </div>
-      <figcaption class="console-cap">Extrait annoté de la console de mon pare-feu, projet E6 NégoTech (août 2026). Chaque interface porte un périmètre de sécurité distinct.</figcaption>
-    </figure>
   </section>
 
   <!-- ===================== PROFIL ===================== -->
@@ -1044,7 +974,7 @@ abbr[title]{text-decoration:none;cursor:help}
             <div class="rea-detail">
               <ul class="list">
                 <li>Site statique en HTML, CSS et JavaScript, sans dépendance, lisible sur ordinateur comme sur mobile, en thème clair ou sombre.</li>
-                <li>Contenu organisé pour l’épreuve E5&nbsp;: réalisations, tableau de synthèse, compétences, certifications et veille technologique.</li>
+                <li>Contenu organisé pour l’épreuve E5&nbsp;: réalisations, tableau de synthèse, compétences et certifications.</li>
                 <li>Plusieurs versions depuis avril 2026, hébergement sur GitHub Pages.</li>
                 <li>Profil LinkedIn qui présente mes réalisations techniques.</li>
               </ul>
@@ -1384,9 +1314,8 @@ abbr[title]{text-decoration:none;cursor:help}
     <div class="section-head">
       <p class="eyebrow">Certifications</p>
       <h2 id="cert-title">Certifications et formations en ligne</h2>
-      <p class="intro">L’épreuve facultative EF3 valorise un parcours de certification personnel. Mes objectifs pour 2026–2027 suivent les deux axes de mon projet&nbsp;: le réseau et la cybersécurité.</p>
+      <p class="intro">Certifications et formations en ligne obtenues en complément du BTS, sur les deux axes de mon projet professionnel&nbsp;: le réseau et la cybersécurité. Elles alimentent aussi mon parcours de certification pour l’épreuve facultative EF3.</p>
     </div>
-    <p class="cert-group">Suivies</p>
     <ul class="certs">
       <li class="cert">
         <div>
@@ -1394,83 +1323,45 @@ abbr[title]{text-decoration:none;cursor:help}
           <p class="org">ANSSI · Agence nationale de la sécurité des systèmes d’information</p>
           <p>Formation officielle de l’ANSSI aux fondamentaux de la cybersécurité&nbsp;: panorama des menaces, authentification, sécurité sur Internet, sécurité du poste de travail et des usages.</p>
           <ul class="docs" style="margin-top:8px">
-            <li data-doc="docs/attestation-secnumacademie.pdf"><span class="doc-name">Attestation de suivi</span><span class="doc-type">PDF</span></li>
+            <li data-doc="docs/attestation-secnumacademie.pdf"><span class="doc-name">Attestation de réussite</span><span class="doc-type">PDF</span></li>
           </ul>
         </div>
-        <div class="cert-side"><span class="when">nov. 2025</span><span class="pill is-done">Suivi</span></div>
+        <div class="cert-side"><span class="when">nov. 2025</span><span class="pill is-done">Acquise</span></div>
       </li>
-    </ul>
-    <p class="cert-group">Objectifs 2026–2027 (EF3)</p>
-    <ul class="certs">
       <li class="cert">
         <div>
           <h3>Introduction to Networks (CCNA&nbsp;1)</h3>
           <p class="org">Cisco Networking Academy</p>
           <p>Modèles OSI et TCP/IP, adressage IPv4 et IPv6, VLSM, configuration de base des routeurs et commutateurs Cisco.</p>
+          <ul class="docs" style="margin-top:8px">
+            <li data-doc="docs/attestation-cisco-itn.pdf"><span class="doc-name">Attestation de réussite</span><span class="doc-type">PDF</span></li>
+          </ul>
         </div>
-        <div class="cert-side"><span class="pill is-plan">Objectif</span></div>
+        <div class="cert-side"><span class="pill is-done">Acquise</span></div>
       </li>
       <li class="cert">
         <div>
           <h3>Introduction to Cybersecurity</h3>
           <p class="org">Cisco Networking Academy</p>
           <p>Menaces, attaques et principes de protection, dans le prolongement de SecNumacadémie.</p>
+          <ul class="docs" style="margin-top:8px">
+            <li data-doc="docs/attestation-cisco-cybersecurite.pdf"><span class="doc-name">Attestation de réussite</span><span class="doc-type">PDF</span></li>
+          </ul>
         </div>
-        <div class="cert-side"><span class="pill is-plan">Objectif</span></div>
+        <div class="cert-side"><span class="pill is-done">Acquise</span></div>
       </li>
       <li class="cert">
         <div>
           <h3>MOOC «&nbsp;L’atelier RGPD&nbsp;»</h3>
           <p class="org">CNIL</p>
           <p>Principes de la protection des données personnelles, utiles pour les projets NégoTech et Health4All.</p>
+          <ul class="docs" style="margin-top:8px">
+            <li data-doc="docs/attestation-cnil-rgpd.pdf"><span class="doc-name">Attestation de réussite</span><span class="doc-type">PDF</span></li>
+          </ul>
         </div>
-        <div class="cert-side"><span class="pill is-plan">Objectif</span></div>
+        <div class="cert-side"><span class="pill is-done">Acquise</span></div>
       </li>
     </ul>
-  </section>
-
-  <!-- ===================== VEILLE ===================== -->
-  <section class="section" id="veille" aria-labelledby="veille-title">
-    <div class="section-head">
-      <p class="eyebrow">Veille technologique · virtualisation</p>
-      <h2 id="veille-title">L’après-VMware et la montée de Proxmox VE</h2>
-    </div>
-    <div class="veille-grid">
-      <div style="display:grid;gap:28px;align-content:start">
-        <p class="question">Comment les organisations adaptent-elles leur virtualisation depuis le rachat de VMware par Broadcom, et quelle place prend Proxmox VE&nbsp;?</p>
-        <div class="prose">
-          <p>Mes maquettes sont passées de VirtualBox à VMware Workstation, puis à Proxmox VE pour mon projet E6. Ce choix d’outil suit un mouvement réel du marché, et je le suis parce qu’il touche directement le métier d’administrateur&nbsp;: coût des licences, migrations, sécurité des hyperviseurs.</p>
-        </div>
-        <dl class="method">
-          <div><dt>Sources</dt><dd>CERT-FR (avis et alertes), avis de sécurité Broadcom (VMSA), notes de version Proxmox, LeMagIT, IT-Connect</dd></div>
-          <div><dt>Outils</dt><dd>Flux RSS regroupés dans un agrégateur, alertes par mots-clés, abonnements LinkedIn</dd></div>
-          <div><dt>Traitement</dt><dd>Pour chaque information&nbsp;: la date, la source et l’impact pour une PME</dd></div>
-        </dl>
-      </div>
-      <ol class="news" aria-label="Chronologie">
-        <li><time datetime="2023-11">nov. 2023</time><div><h3>Broadcom finalise le rachat de VMware</h3><p>Premier effet visible pour les clients&nbsp;: une refonte complète de l’offre commerciale.</p></div></li>
-        <li><time datetime="2023-12">déc. 2023</time><div><h3>Fin des licences perpétuelles</h3><p>Passage à l’abonnement et regroupement des produits dans quelques offres groupées (VMware Cloud Foundation, vSphere Foundation). Pour une PME, le coût annuel devient le critère principal.</p></div></li>
-        <li><time datetime="2024-02">févr. 2024</time><div><h3>Arrêt de l’hyperviseur ESXi gratuit</h3><p>Les laboratoires et les petites structures perdent leur solution gratuite de référence.</p></div></li>
-        <li><time datetime="2024-04">avr. 2024</time><div><h3>Proxmox VE 8.2 importe les VM ESXi</h3><p>Un assistant d’import intégré facilite directement la migration depuis VMware.</p></div></li>
-        <li><time datetime="2024-05">mai 2024</time><div><h3>VMware Workstation Pro devient gratuit</h3><p>D’abord pour l’usage personnel, puis pour tous les usages en novembre 2024. C’est l’outil de mes maquettes sur poste de travail.</p></div></li>
-        <li><time datetime="2025-03">mars 2025</time><div><h3>Trois failles zero-day dans ESXi, Workstation et Fusion</h3><p>CVE-2025-22224, CVE-2025-22225 et CVE-2025-22226, exploitées avant correctif. Un hyperviseur compromis expose toutes ses VM, d’où l’importance de la gestion des correctifs que j’ai pratiquée avec Nexpose chez ITW.</p></div></li>
-        <li><time datetime="2025-08">août 2025</time><div><h3>Proxmox VE 9.0, basé sur Debian 13</h3><p>Nouvelle version majeure. J’utilise la branche&nbsp;9 et Debian&nbsp;13 dans mon projet E6.</p></div></li>
-      </ol>
-    </div>
-    <div class="takeaways">
-      <article class="takeaway">
-        <h3>Coût et dépendance</h3>
-        <p>Le changement de licences pousse les PME à comparer VMware avec Proxmox VE ou Hyper-V avant chaque renouvellement.</p>
-      </article>
-      <article class="takeaway">
-        <h3>Une alternative crédible</h3>
-        <p>Proxmox VE couvre les besoins d’une PME&nbsp;: machines KVM et conteneurs LXC, cluster, haute disponibilité et sauvegarde avec Proxmox Backup Server, sans licence obligatoire.</p>
-      </article>
-      <article class="takeaway">
-        <h3>L’hyperviseur, cible prioritaire</h3>
-        <p>Il faut appliquer les correctifs rapidement et isoler l’interface d’administration, comme le VLAN ADMIN de mon projet NégoTech.</p>
-      </article>
-    </div>
   </section>
 
   <!-- ===================== CONTACT ===================== -->

@@ -1,6 +1,6 @@
 # Portfolio de Yann Kounkoud · BTS SIO SISR
 
-Portfolio de Yann Kounkoud, étudiant en 2e année de BTS SIO option SISR à l'ESUP Puteaux (session 2027) : projets de l'épreuve E6, stages, tableau de synthèse de l'épreuve E5, compétences et veille technologique.
+Portfolio de Yann Kounkoud, étudiant en 2e année de BTS SIO option SISR à l'ESUP Puteaux (session 2027) : projets de l'épreuve E6, stages, tableau de synthèse de l'épreuve E5, compétences et certifications.
 
 ## Contenu du dépôt
 
@@ -28,6 +28,9 @@ Un intitulé de livrable devient un lien seulement si le fichier existe dans `do
 | `vlan-stratadvise.pkt` | Réseau StratAdvise : fichier Cisco Packet Tracer |
 | `vlan-diaporama.pdf` | Réseau StratAdvise : diaporama |
 | `attestation-secnumacademie.pdf` | Attestation SecNumacadémie (ANSSI) |
+| `attestation-cisco-itn.pdf` | Attestation Introduction to Networks (Cisco Networking Academy) |
+| `attestation-cisco-cybersecurite.pdf` | Attestation Introduction to Cybersecurity (Cisco Networking Academy) |
+| `attestation-cnil-rgpd.pdf` | Attestation MOOC « L'atelier RGPD » (CNIL) |
 
 Avant d'ajouter un document, retirer les informations internes aux entreprises (adresses IP, noms de collègues) ainsi que tout identifiant ou mot de passe.
 
