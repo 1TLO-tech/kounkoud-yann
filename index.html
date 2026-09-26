@@ -1,0 +1,1618 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Portfolio BTS SIO option SISR de Yann Kounkoud : projets E6, stages, tableau de synthèse E5, compétences et veille technologique.">
+<meta name="author" content="Yann Kounkoud">
+<title>Portfolio Yann Kounkoud</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+:root{
+  color-scheme: light;
+  --bg:#F2F5F4;
+  --surface:#FFFFFF;
+  --surface-2:#E7EDEC;
+  --ink:#131A1D;
+  --ink-2:#34424A;
+  --muted:#56636A;
+  --line:#D2DBDA;
+  --line-strong:#A9B8B9;
+  --accent:#00767F;
+  --accent-strong:#005A62;
+  --accent-ink:#FFFFFF;
+  --accent-soft:#D5ECEE;
+  --ok:#256B3E;
+  --ok-soft:#DCEFE2;
+  --wip:#805800;
+  --wip-soft:#FBEFC8;
+  --wip-line:#D9A400;
+  --plan:#56636A;
+  --plan-soft:#E6EBEA;
+  --console-bg:#0E1417;
+  --console-line:#24323A;
+  --console-ink:#D3E4E5;
+  --console-dim:#809A9E;
+  --console-accent:#46C6CF;
+  --console-ok:#7ED69B;
+  --console-wip:#F2C54E;
+  --shadow:0 1px 0 rgba(19,26,29,.04), 0 14px 34px -20px rgba(19,26,29,.28);
+  --radius:6px;
+  --header-h:64px;
+  --font-display:"Archivo","Arial Narrow",Arial,system-ui,sans-serif;
+  --font-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --font-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --bg:#0D1215;
+    --surface:#141B1F;
+    --surface-2:#1A2328;
+    --ink:#E3EBEB;
+    --ink-2:#C2CFD1;
+    --muted:#95A5AA;
+    --line:#25313A;
+    --line-strong:#3B4B54;
+    --accent:#4CC8D1;
+    --accent-strong:#86DEE4;
+    --accent-ink:#062629;
+    --accent-soft:#113439;
+    --ok:#74D193;
+    --ok-soft:#12301F;
+    --wip:#F2C54E;
+    --wip-soft:#3A2E0A;
+    --wip-line:#F2C54E;
+    --plan:#A2B1B5;
+    --plan-soft:#1D272C;
+    --console-bg:#080D10;
+    --console-line:#22303A;
+    --shadow:0 1px 0 rgba(0,0,0,.35), 0 16px 38px -20px rgba(0,0,0,.75);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --bg:#0D1215;
+  --surface:#141B1F;
+  --surface-2:#1A2328;
+  --ink:#E3EBEB;
+  --ink-2:#C2CFD1;
+  --muted:#95A5AA;
+  --line:#25313A;
+  --line-strong:#3B4B54;
+  --accent:#4CC8D1;
+  --accent-strong:#86DEE4;
+  --accent-ink:#062629;
+  --accent-soft:#113439;
+  --ok:#74D193;
+  --ok-soft:#12301F;
+  --wip:#F2C54E;
+  --wip-soft:#3A2E0A;
+  --wip-line:#F2C54E;
+  --plan:#A2B1B5;
+  --plan-soft:#1D272C;
+  --console-bg:#080D10;
+  --console-line:#22303A;
+  --shadow:0 1px 0 rgba(0,0,0,.35), 0 16px 38px -20px rgba(0,0,0,.75);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 var(--font-body);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{max-width:100%}
+[hidden]{display:none!important}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:.18em}
+a:hover{color:var(--accent-strong)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+h1,h2,h3,h4{margin:0;font-family:var(--font-display);color:var(--ink);text-wrap:balance}
+p{margin:0}
+ul,ol{margin:0;padding:0}
+abbr[title]{text-decoration:none;cursor:help}
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.wrap{width:100%;max-width:1140px;margin-inline:auto;padding-inline:clamp(16px,4vw,40px)}
+.mono{font-family:var(--font-mono)}
+.eyebrow{font:500 12px/1.4 var(--font-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+
+.skip{position:absolute;left:12px;top:-60px;z-index:50;background:var(--accent);color:var(--accent-ink);padding:10px 14px;border-radius:4px;font-weight:600;text-decoration:none}
+.skip:focus{top:12px;color:var(--accent-ink)}
+
+/* ---------- En-tête ---------- */
+.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--bg);background:color-mix(in srgb,var(--bg) 90%,transparent);-webkit-backdrop-filter:saturate(1.2) blur(10px);backdrop-filter:saturate(1.2) blur(10px);border-bottom:1px solid var(--line)}
+.site-header .wrap{position:relative;display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:var(--header-h)}
+.brand{display:flex;align-items:center;gap:12px;color:var(--ink);text-decoration:none}
+.brand:hover{color:var(--ink)}
+.brand-mark{font:600 13px/1 var(--font-mono);letter-spacing:.04em;border:1.5px solid currentColor;border-radius:3px;padding:7px 6px}
+.brand-name{display:block;font:700 15px/1.15 var(--font-display);font-stretch:112%}
+.brand-sub{display:block;font:500 10.5px/1.3 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.nav{display:flex;flex-wrap:wrap;gap:2px}
+.nav a{font:500 13.5px/1 var(--font-body);color:var(--ink-2);text-decoration:none;padding:9px 9px;border-radius:4px;white-space:nowrap}
+.nav a:hover{background:var(--surface-2);color:var(--ink)}
+.nav a[aria-current="true"]{color:var(--accent);background:var(--accent-soft)}
+.menu-btn{display:none;align-items:center;gap:8px;font:600 13px/1 var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--ink);background:transparent;border:1.5px solid var(--line-strong);border-radius:4px;padding:10px 12px;cursor:pointer}
+.menu-btn .bars{display:grid;gap:3px}
+.menu-btn .bars i{display:block;width:14px;height:1.5px;background:currentColor}
+@media (max-width:1100px){
+  .menu-btn{display:inline-flex}
+  .nav{position:absolute;top:100%;left:0;right:0;flex-direction:column;flex-wrap:nowrap;gap:0;background:var(--surface);border-bottom:1px solid var(--line);box-shadow:var(--shadow);padding:8px clamp(16px,4vw,40px) 14px}
+  .nav:not(.is-open){display:none}
+  .nav a{font-size:15px;padding:13px 10px;border-radius:0;border-bottom:1px solid var(--line)}
+  .nav a:last-child{border-bottom:0}
+}
+
+/* ---------- Sections ---------- */
+.section{padding-block:clamp(56px,8vw,104px);border-top:1px solid var(--line);scroll-margin-top:calc(var(--header-h) + 8px)}
+.section-head{display:grid;gap:12px;max-width:780px;margin-bottom:clamp(28px,4vw,44px)}
+.section-head h2{font-size:clamp(1.75rem,3.6vw,2.6rem);font-weight:750;font-stretch:112%;line-height:1.08;letter-spacing:-.01em}
+.section-head .intro{color:var(--ink-2);font-size:1.05rem;max-width:66ch}
+.prose{display:grid;gap:14px;max-width:66ch;color:var(--ink-2)}
+.prose strong{color:var(--ink);font-weight:600}
+
+/* ---------- Héro ---------- */
+.hero{display:grid;gap:clamp(32px,5vw,56px);align-items:center;padding-block:clamp(40px,7vw,88px) clamp(48px,7vw,96px);scroll-margin-top:var(--header-h)}
+@media (min-width:960px){.hero{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)}}
+.hero h1{margin-top:18px;font-size:clamp(2.8rem,7.2vw,5.4rem);font-weight:800;font-stretch:125%;line-height:.92;letter-spacing:-.02em}
+.hero .role{margin-top:18px;font:650 clamp(1.1rem,2.2vw,1.42rem)/1.3 var(--font-display);font-stretch:108%;color:var(--accent)}
+.hero .lead{margin-top:14px;max-width:58ch;font-size:clamp(1.02rem,1.4vw,1.14rem);color:var(--ink-2)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px 28px;margin:28px 0 0;padding-top:20px;border-top:1px solid var(--line)}
+.facts dt{font:500 11.5px/1.3 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.facts dd{margin:4px 0 0;font-weight:500;color:var(--ink);line-height:1.45}
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px 12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;font:600 14.5px/1 var(--font-body);padding:13px 18px;border-radius:4px;border:1.5px solid transparent;text-decoration:none;cursor:pointer}
+.btn-primary{background:var(--accent);color:var(--accent-ink)}
+.btn-primary:hover{background:var(--accent-strong);color:var(--accent-ink)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line-strong)}
+.btn-ghost:hover{border-color:var(--ink);color:var(--ink)}
+.link-arrow{font-weight:600;text-decoration:none}
+.link-arrow:hover{text-decoration:underline}
+
+.console{background:var(--console-bg);color:var(--console-ink);border:1px solid var(--console-line);border-radius:8px;box-shadow:var(--shadow);overflow:hidden}
+.console-bar{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 12px;padding:10px 14px;border-bottom:1px solid var(--console-line);font:500 11.5px/1.3 var(--font-mono);letter-spacing:.04em;color:var(--console-dim)}
+.console pre{margin:0;padding:16px 16px 18px;overflow-x:auto;font:400 12.5px/1.75 var(--font-mono);white-space:pre;color:var(--console-ink)}
+.console .c-dim{color:var(--console-dim)}
+.console .c-acc{color:var(--console-accent)}
+.console .c-ok{color:var(--console-ok)}
+.console .c-wip{color:var(--console-wip)}
+.console .cursor{display:inline-block;width:.6em;height:1.1em;vertical-align:-.2em;background:var(--console-ink);animation:blink 1.1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.console-cap{margin-top:12px;max-width:54ch;font-size:13.5px;color:var(--muted)}
+
+/* ---------- Profil ---------- */
+.split{display:grid;gap:clamp(28px,5vw,64px)}
+@media (min-width:900px){.split{grid-template-columns:minmax(0,1.35fr) minmax(0,.9fr)}}
+.subhead{font:700 1.08rem/1.3 var(--font-display);font-stretch:106%;margin-bottom:10px}
+.goals{display:grid;gap:10px;margin-top:6px}
+.goals li{list-style:none;display:grid;grid-template-columns:118px 1fr;gap:12px;padding-top:10px;border-top:1px solid var(--line)}
+.goals .when{font:500 12px/1.6 var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.goals p{color:var(--ink-2)}
+@media (max-width:520px){.goals li{grid-template-columns:1fr;gap:2px}}
+.sheet{margin:0;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
+.sheet div{display:grid;grid-template-columns:118px 1fr;gap:12px;padding:12px 16px;border-top:1px solid var(--line)}
+.sheet div:first-child{border-top:0}
+.sheet dt{font:500 11.5px/1.6 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.sheet dd{margin:0;color:var(--ink);line-height:1.5}
+@media (max-width:420px){.sheet div{grid-template-columns:1fr;gap:2px}}
+
+/* ---------- BTS ---------- */
+.blocs{display:grid;gap:16px}
+@media (min-width:860px){.blocs{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.bloc{display:grid;grid-template-rows:auto auto 1fr auto;gap:10px;padding:20px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
+.bloc h3{font-size:1.12rem;font-weight:700;font-stretch:104%;line-height:1.25}
+.bloc p{color:var(--ink-2);font-size:15px}
+.bloc .exam{padding-top:12px;border-top:1px solid var(--line);font:500 12.5px/1.5 var(--font-mono);color:var(--ink)}
+.bloc.is-here{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.bts-foot{display:grid;gap:8px;margin-top:22px;max-width:80ch;color:var(--ink-2);font-size:15px}
+
+/* ---------- Parcours ---------- */
+.tracks{display:grid;gap:clamp(32px,5vw,56px)}
+@media (min-width:900px){.tracks{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr)}}
+.track-title{font:500 12px/1.4 var(--font-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+.timeline{position:relative;display:grid;gap:26px;padding-left:22px}
+.timeline::before{content:"";position:absolute;left:4px;top:8px;bottom:8px;width:1.5px;background:var(--line-strong)}
+.tl-item{position:relative;list-style:none;display:grid;gap:6px}
+.tl-item::before{content:"";position:absolute;left:-22px;top:7px;width:10px;height:10px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+.tl-date{font:500 12.5px/1.4 var(--font-mono);color:var(--accent);font-variant-numeric:tabular-nums}
+.tl-date span{color:var(--muted)}
+.tl-item h3{font-size:1.1rem;font-weight:700;font-stretch:104%;line-height:1.3}
+.tl-org{display:block;font:500 14.5px/1.4 var(--font-body);color:var(--ink-2);margin-top:2px}
+.tl-item p{color:var(--ink-2);font-size:15px;max-width:62ch}
+.tl-link{font-size:14px;font-weight:600;text-decoration:none}
+.tl-link:hover{text-decoration:underline}
+
+/* ---------- Pastilles d'état, puces ---------- */
+.pill{display:inline-flex;align-items:center;gap:6px;font:600 11px/1 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;padding:6px 8px;border-radius:3px;white-space:nowrap}
+.pill::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
+.is-done .pill,.pill.is-done{background:var(--ok-soft);color:var(--ok)}
+.is-wip .pill,.pill.is-wip{background:var(--wip-soft);color:var(--wip)}
+.is-plan .pill,.pill.is-plan{background:transparent;color:var(--plan);box-shadow:inset 0 0 0 1px var(--line-strong)}
+.is-plan .pill::before,.pill.is-plan::before{background:transparent;box-shadow:inset 0 0 0 1.5px currentColor}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips li{list-style:none;font:500 12px/1 var(--font-mono);padding:6px 8px;border:1px solid var(--line);border-radius:3px;background:var(--surface);color:var(--ink-2)}
+.comp{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.comp .k{font:600 11px/1 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-right:2px}
+.ctag{font:500 12.5px/1 var(--font-body);padding:6px 8px;border-radius:3px;background:var(--accent-soft);color:var(--accent-strong)}
+.atag{font:500 12.5px/1 var(--font-body);padding:6px 8px;border-radius:3px;background:var(--surface-2);color:var(--ink)}
+
+/* ---------- Projet phare ---------- */
+.feature{display:grid;gap:26px;padding:clamp(20px,3vw,36px);border:1px solid var(--line);border-radius:8px;background:var(--surface);box-shadow:var(--shadow);scroll-margin-top:calc(var(--header-h) + 8px)}
+.feature-top{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px}
+.feature h3{font-size:clamp(1.4rem,2.8vw,2rem);font-weight:750;font-stretch:110%;line-height:1.12;margin-top:12px}
+.feature .sum{margin-top:12px;max-width:70ch;color:var(--ink-2);font-size:1.04rem}
+.ctx{display:grid;gap:12px 24px;margin:0}
+@media (min-width:760px){.ctx{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.ctx div{padding-top:10px;border-top:1px solid var(--line)}
+.ctx dt{font:500 11.5px/1.4 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.ctx dd{margin:4px 0 0;color:var(--ink);font-size:15px;line-height:1.5}
+.diagram-fig{margin:0;display:grid;gap:10px}
+.diagram{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--bg)}
+.arch{display:block;width:100%;min-width:760px;height:auto}
+.arch text{font-family:var(--font-mono)}
+.arch .t-name{font-size:11px;font-weight:600;fill:var(--ink)}
+.arch .is-plan .t-name{fill:var(--ink-2)}
+.arch .t-role{font-size:10px;fill:var(--muted)}
+.arch .t-small{font-size:10px;fill:var(--muted)}
+.arch .t-frame{font-size:10.5px;font-weight:600;letter-spacing:.08em;fill:var(--muted)}
+.arch .t-if{font-size:9.5px;font-weight:600;fill:var(--accent)}
+.arch .t-tag{font-size:9px;font-weight:600;letter-spacing:.06em}
+.arch .t-ok{fill:var(--ok)}
+.arch .t-wip{fill:var(--wip)}
+.arch .t-acc{fill:var(--accent)}
+.arch .frame{fill:var(--surface-2);fill-opacity:.5;stroke:var(--line-strong);stroke-width:1}
+.arch .n-ext{fill:var(--surface-2);stroke:var(--line-strong);stroke-width:1}
+.arch .n-done{fill:var(--surface);stroke:var(--ok);stroke-width:1.6}
+.arch .n-wip{fill:var(--surface);stroke:var(--wip-line);stroke-width:1.6}
+.arch .n-plan{fill:var(--bg);stroke:var(--line-strong);stroke-width:1.2;stroke-dasharray:4 3}
+.arch .n-vlan{fill:var(--accent-soft);stroke:var(--accent);stroke-width:1.2}
+.arch .l{fill:none;stroke:var(--line-strong);stroke-width:1.5}
+.arch .l-plan{fill:none;stroke:var(--line-strong);stroke-width:1.5;stroke-dasharray:6 4}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;font:500 12.5px/1.4 var(--font-mono);color:var(--muted)}
+.legend li{list-style:none;display:inline-flex;align-items:center;gap:8px}
+.legend .sw{width:22px;height:12px;border-radius:2px;background:var(--surface)}
+.legend .sw-done{box-shadow:inset 0 0 0 1.6px var(--ok)}
+.legend .sw-wip{box-shadow:inset 0 0 0 1.6px var(--wip-line)}
+.legend .sw-plan{background:transparent;border:1.2px dashed var(--line-strong)}
+.fig-cap{font-size:13.5px;color:var(--muted);max-width:80ch}
+
+.phases{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+@media (min-width:860px){.phases{grid-template-columns:repeat(5,minmax(0,1fr))}}
+.ph{list-style:none;display:grid;grid-template-rows:auto auto 1fr auto;gap:4px;padding:12px 14px;background:var(--surface)}
+.ph-num{font:600 22px/1 var(--font-mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.ph-title{font:700 14.5px/1.3 var(--font-display);font-stretch:104%;color:var(--ink)}
+.ph-desc{font-size:13px;line-height:1.4;color:var(--muted)}
+.ph-state{margin-top:6px;font:600 10.5px/1 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--plan)}
+.ph.is-done .ph-num,.ph.is-done .ph-state{color:var(--ok)}
+.ph.is-wip{background:var(--wip-soft)}
+.ph.is-wip .ph-num,.ph.is-wip .ph-state{color:var(--wip)}
+.ph.is-plan .ph-title{color:var(--ink-2)}
+.cols{display:grid;gap:24px}
+@media (min-width:860px){.cols{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr)}}
+.list{display:grid;gap:8px;padding-left:1.15em;color:var(--ink-2)}
+.list li::marker{color:var(--accent)}
+.list strong{color:var(--ink);font-weight:600}
+.block-title{font:600 12px/1.3 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.meta-row{display:grid;gap:12px}
+
+/* ---------- Liste des réalisations ---------- */
+.list-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:16px;margin-top:clamp(40px,6vw,64px);margin-bottom:8px}
+.list-head h3{font-size:1.35rem;font-weight:750;font-stretch:110%}
+.filters{display:flex;flex-wrap:wrap;gap:6px}
+.filters button{display:inline-flex;align-items:center;gap:8px;font:600 12px/1 var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);background:var(--surface);border:1px solid var(--line-strong);border-radius:4px;padding:9px 11px;cursor:pointer}
+.filters button:hover{border-color:var(--ink);color:var(--ink)}
+.filters button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.filters .count{font-variant-numeric:tabular-nums;opacity:.75}
+.rea{display:grid;gap:14px 32px;padding-block:28px;border-top:1px solid var(--line);scroll-margin-top:calc(var(--header-h) + 8px)}
+.rea:first-of-type{border-top:0}
+@media (min-width:760px){.rea{grid-template-columns:190px minmax(0,1fr)}}
+.rea-meta{display:flex;flex-wrap:wrap;align-content:start;align-items:center;gap:8px 12px}
+@media (min-width:760px){.rea-meta{flex-direction:column;align-items:start}}
+.rea-period{font:500 12.5px/1.4 var(--font-mono);color:var(--ink);font-variant-numeric:tabular-nums}
+.rea-cat{font:500 11.5px/1.4 var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.rea-body{display:grid;gap:12px;min-width:0}
+.rea h3{font-size:1.24rem;font-weight:700;font-stretch:106%;line-height:1.25}
+.rea-sum{color:var(--ink-2);max-width:72ch}
+.rea details{border-top:1px dashed var(--line-strong);margin-top:2px}
+.rea summary{list-style:none;display:inline-flex;align-items:center;gap:10px;padding:12px 0 2px;font:600 14px/1.2 var(--font-body);color:var(--accent);cursor:pointer}
+.rea summary::-webkit-details-marker{display:none}
+.rea summary::before{content:"";width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(-45deg);transition:transform .15s ease}
+.rea details[open] summary::before{transform:rotate(45deg)}
+.rea details[open] .when-closed,.rea details:not([open]) .when-open{display:none}
+.rea-detail{display:grid;gap:20px;padding-top:14px;max-width:76ch}
+.rea-detail p{color:var(--ink-2)}
+.rea-detail h4{font:600 12px/1.3 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.steps{display:grid;gap:8px;padding-left:1.4em;color:var(--ink-2)}
+.steps li::marker{font:600 13px var(--font-mono);color:var(--accent)}
+.docs{display:grid;gap:6px}
+.docs li{list-style:none;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;color:var(--ink-2)}
+.docs .doc-type{font:600 10.5px/1 var(--font-mono);letter-spacing:.08em;color:var(--muted);border:1px solid var(--line-strong);border-radius:3px;padding:3px 5px}
+.docs .doc-note{font-size:13px;color:var(--muted)}
+.mini-table-wrap{overflow-x:auto}
+.mini-table{width:100%;min-width:480px;border-collapse:collapse;font-size:14px}
+.mini-table th,.mini-table td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.mini-table th{font:600 11px/1.3 var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--surface-2)}
+.mini-table td.mono{font-size:13px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.empty-note{padding-block:24px;color:var(--muted)}
+
+/* ---------- Tableau de synthèse ---------- */
+.table-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
+.synth{width:100%;min-width:820px;border-collapse:collapse;font-size:14px}
+.synth caption{text-align:left;padding:14px 16px;font:500 12.5px/1.5 var(--font-mono);color:var(--muted);border-bottom:1px solid var(--line)}
+.synth th,.synth td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.synth thead th{font:600 11px/1.3 var(--font-mono);letter-spacing:.05em;text-transform:uppercase;color:var(--muted);background:var(--surface-2);vertical-align:bottom}
+.synth .c{width:84px;text-align:center;vertical-align:middle}
+.synth tbody th{font-weight:500;color:var(--ink)}
+.synth tbody th a{color:var(--ink);text-decoration-color:var(--line-strong)}
+.synth tbody th a:hover{color:var(--accent);text-decoration-color:currentColor}
+.synth .grp th{background:var(--bg);font:600 11.5px/1.4 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.synth td.period{font:400 12.5px/1.5 var(--font-mono);color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+.synth .dot{display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+.synth tfoot th,.synth tfoot td{background:var(--surface-2);font:600 13px/1.4 var(--font-mono);font-variant-numeric:tabular-nums;border-bottom:0}
+.synth .todo td{color:var(--muted);font-style:italic}
+.comp-legend{display:grid;gap:8px 28px;margin:22px 0 0}
+@media (min-width:760px){.comp-legend{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.comp-legend div{display:grid;grid-template-columns:132px 1fr;gap:10px;font-size:14.5px}
+.comp-legend dt{font:600 12px/1.6 var(--font-mono);color:var(--accent)}
+.comp-legend dd{margin:0;color:var(--ink-2)}
+@media (max-width:420px){.comp-legend div{grid-template-columns:1fr;gap:0}}
+.synth-foot{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;margin-top:18px;font-size:14.5px;color:var(--muted)}
+
+/* ---------- Compétences ---------- */
+.skills{display:grid;gap:28px 40px}
+@media (min-width:640px){.skills{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:980px){.skills{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.skill{display:grid;gap:12px;align-content:start;padding-top:14px;border-top:2px solid var(--ink)}
+.skill h3{font-size:1.05rem;font-weight:700;font-stretch:106%}
+.skill .where{font-size:13.5px;color:var(--muted)}
+.qualities{display:flex;flex-wrap:wrap;gap:8px 10px;margin-top:36px;padding-top:18px;border-top:1px solid var(--line);align-items:center}
+.qualities .k{font:600 11.5px/1 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-right:6px}
+.qualities span.q{font-weight:500;color:var(--ink)}
+.qualities span.sep{color:var(--line-strong)}
+
+/* ---------- Certifications ---------- */
+.certs{display:grid;border-top:1px solid var(--line)}
+.cert{list-style:none;display:grid;gap:6px 24px;padding-block:18px;border-bottom:1px solid var(--line)}
+@media (min-width:760px){.cert{grid-template-columns:minmax(0,1fr) auto;align-items:start}}
+.cert h3{font-size:1.08rem;font-weight:700;font-stretch:104%}
+.cert .org{font:500 12.5px/1.5 var(--font-mono);color:var(--muted);margin-top:2px}
+.cert p{color:var(--ink-2);font-size:15px;max-width:70ch;margin-top:6px}
+.cert-side{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center}
+.cert-side .when{font:500 12.5px/1 var(--font-mono);color:var(--ink)}
+.cert-group{font:600 12px/1.4 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:34px 0 4px}
+.cert-group:first-child{margin-top:0}
+
+/* ---------- Veille ---------- */
+.veille-grid{display:grid;gap:clamp(32px,5vw,56px)}
+@media (min-width:960px){.veille-grid{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}}
+.question{font:650 clamp(1.15rem,2vw,1.4rem)/1.35 var(--font-display);font-stretch:104%;color:var(--ink);padding-left:16px;border-left:3px solid var(--accent)}
+.method{margin:0;display:grid;gap:14px}
+.method div{display:grid;gap:4px}
+.method dt{font:600 11.5px/1.4 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.method dd{margin:0;color:var(--ink-2)}
+.news{display:grid}
+.news li{list-style:none;display:grid;grid-template-columns:104px minmax(0,1fr);gap:16px;padding-block:14px;border-top:1px solid var(--line)}
+.news li:first-child{border-top:0;padding-top:0}
+.news time{font:600 12.5px/1.6 var(--font-mono);color:var(--accent);font-variant-numeric:tabular-nums}
+.news h3{font:650 1rem/1.35 var(--font-display);font-stretch:102%}
+.news p{margin-top:4px;color:var(--ink-2);font-size:15px}
+@media (max-width:480px){.news li{grid-template-columns:1fr;gap:4px}}
+.takeaways{display:grid;gap:16px;margin-top:clamp(32px,5vw,48px)}
+@media (min-width:860px){.takeaways{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.takeaway{padding:18px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
+.takeaway h3{font-size:1rem;font-weight:700;font-stretch:104%;margin-bottom:6px}
+.takeaway p{color:var(--ink-2);font-size:15px}
+
+/* ---------- Contact ---------- */
+.contact{display:grid;gap:28px}
+@media (min-width:900px){.contact{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);align-items:start}}
+.channels{display:grid;gap:14px}
+.channel{display:grid;gap:6px;padding:18px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
+.channel .k{font:600 11.5px/1.4 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.channel .v{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px}
+.mail{font:700 clamp(1.05rem,2.4vw,1.35rem)/1.3 var(--font-display);font-stretch:104%;color:var(--ink);user-select:all;overflow-wrap:anywhere}
+.copy-btn{font:600 12px/1 var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--ink);background:transparent;border:1.5px solid var(--line-strong);border-radius:4px;padding:8px 10px;cursor:pointer}
+.copy-btn:hover{border-color:var(--ink)}
+.copy-status{font-size:13.5px;color:var(--ok);min-height:1.4em}
+.channel a{font-weight:600;overflow-wrap:anywhere}
+
+.site-footer{border-top:1px solid var(--line);padding-block:28px 36px;font:500 12.5px/1.6 var(--font-mono);color:var(--muted)}
+.site-footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+@media print{
+  .site-header,.filters,.actions,.menu-btn,.copy-btn,.skip,.copy-status{display:none!important}
+  body{background:#fff;color:#000;font-size:11pt}
+  .section{padding-block:22px}
+  .rea,.feature,.bloc,.cert{break-inside:avoid}
+  .console,.feature{box-shadow:none}
+  a{color:inherit;text-decoration:none}
+}
+</style>
+</head>
+<body>
+<div lang="fr">
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Yann Kounkoud, retour en haut de page">
+      <span class="brand-mark" aria-hidden="true">YK</span>
+      <span>
+        <span class="brand-name">Yann Kounkoud</span>
+        <span class="brand-sub">BTS SIO · option SISR</span>
+      </span>
+    </a>
+    <button class="menu-btn" type="button" id="menu-btn" aria-expanded="false" aria-controls="nav">
+      <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>Menu
+    </button>
+    <nav class="nav" id="nav" aria-label="Sections du portfolio">
+      <a href="#profil">Profil</a>
+      <a href="#bts">BTS SIO</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#synthese">Synthèse E5</a>
+      <a href="#competences">Compétences</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#veille">Veille</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu" class="wrap">
+
+  <!-- ===================== HÉRO ===================== -->
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div>
+      <p class="eyebrow">BTS SIO · option SISR · session 2027</p>
+      <h1 id="hero-title">Yann<br>Kounkoud</h1>
+      <p class="role">Technicien systèmes et réseaux en formation</p>
+      <p class="lead">Étudiant en 2<sup>e</sup> année de BTS SIO option SISR à l’ESUP Puteaux. Je monte des maquettes d’infrastructure complètes (virtualisation, réseau segmenté, annuaire, supervision) et je les documente pour qu’un autre technicien puisse les reprendre.</p>
+      <dl class="facts">
+        <div><dt>Objectif</dt><dd>Alternance en support ou administration systèmes et réseaux</dd></div>
+        <div><dt>Expérience</dt><dd>Stages chez Sopra Steria, ITW Automotive et Its Groupe Tech</dd></div>
+        <div><dt>Localisation</dt><dd>Mantes-la-Jolie (78), Île-de-France</dd></div>
+      </dl>
+      <div class="actions">
+        <a class="btn btn-primary" href="#realisations">Voir mes réalisations</a>
+        <a class="btn btn-ghost" href="#synthese">Tableau de synthèse E5</a>
+        <a class="btn btn-ghost" href="docs/cv-yann-kounkoud.pdf" data-doc="docs/cv-yann-kounkoud.pdf" target="_blank" rel="noopener" hidden>CV (PDF)</a>
+        <a class="link-arrow" href="#contact">Me contacter →</a>
+      </div>
+    </div>
+
+    <figure style="margin:0">
+      <div class="console" role="img" aria-label="Extrait de la console du pare-feu pfSense du projet NégoTech : cinq interfaces, WAN en DHCP, puis ADMIN 10.10.10.254/24, SERVEURS 10.10.20.254/24, UTILISATEURS 10.10.30.254/24 et DMZ 10.10.40.254/24. Machine virtuelle 100 FW-EDGE en service, machine 101 DC1-WIN en installation.">
+        <div class="console-bar" aria-hidden="true"><span>noVNC · VM 100 · FW-EDGE</span><span>Proxmox VE 9.2</span></div>
+<pre aria-hidden="true"><span class="c-dim">*** pfSense 2.8.1-RELEASE (amd64) ***</span>
+
+ WAN  -> vtnet0 -> DHCP             <span class="c-dim"># NAT VMware</span>
+ LAN  -> vtnet1 -> <span class="c-acc">10.10.10.254/24</span>  <span class="c-dim"># ADMIN</span>
+ OPT1 -> vtnet2 -> <span class="c-acc">10.10.20.254/24</span>  <span class="c-dim"># SERVEURS</span>
+ OPT2 -> vtnet3 -> <span class="c-acc">10.10.30.254/24</span>  <span class="c-dim"># UTILISATEURS</span>
+ OPT3 -> vtnet4 -> <span class="c-acc">10.10.40.254/24</span>  <span class="c-dim"># DMZ</span>
+
+<span class="c-dim"># machines virtuelles du nœud pve</span>
+ 100  FW-EDGE   pfSense CE        <span class="c-ok">en service</span>
+ 101  DC1-WIN   Windows Srv 2022  <span class="c-wip">installation</span>
+
+ Enter an option: <span class="cursor"></span></pre>
+      </div>
+      <figcaption class="console-cap">Extrait annoté de la console de mon pare-feu, projet E6 NégoTech (août 2026). Chaque interface porte un périmètre de sécurité distinct.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ===================== PROFIL ===================== -->
+  <section class="section" id="profil" aria-labelledby="profil-title">
+    <div class="section-head">
+      <p class="eyebrow">Profil</p>
+      <h2 id="profil-title">Du poste utilisateur à l’infrastructure</h2>
+    </div>
+    <div class="split">
+      <div>
+        <div class="prose">
+          <p>Après un bac STMG, je me suis orienté vers l’informatique d’infrastructure. Mes premières expériences en entreprise m’ont placé côté support&nbsp;: installation et configuration de postes Windows et Linux chez <strong>Sopra Steria</strong>, puis helpdesk de niveau&nbsp;1 et gestion des vulnérabilités chez <strong>ITW Automotive</strong>.</p>
+          <p>En BTS SIO option SISR, j’ai élargi ce socle vers l’administration&nbsp;: Active Directory et stratégies de groupe, réseaux segmentés en VLAN, supervision (SNMP, Zabbix), gestion de parc avec GLPI et virtualisation (VirtualBox, VMware Workstation, Proxmox VE).</p>
+          <p>Ma méthode tient en trois règles&nbsp;: concevoir avant d’installer, valider chaque étape par un test et un instantané, rédiger la documentation au fil du projet.</p>
+        </div>
+        <h3 class="subhead" style="margin-top:32px">Projet professionnel</h3>
+        <ul class="goals">
+          <li><span class="when">Maintenant</span><p>Une alternance en support ou en administration systèmes et réseaux, au rythme de 3&nbsp;jours en entreprise et 2&nbsp;jours en formation.</p></li>
+          <li><span class="when">Après le BTS</span><p>Évoluer vers un poste de technicien systèmes et réseaux de niveau&nbsp;2, puis d’administrateur.</p></li>
+          <li><span class="when">À approfondir</span><p>La cybersécurité, découverte en traitant des vulnérabilités réelles chez ITW.</p></li>
+        </ul>
+      </div>
+      <dl class="sheet" aria-label="Fiche d’identité">
+        <div><dt>Formation</dt><dd>BTS SIO option SISR, 2<sup>e</sup> année</dd></div>
+        <div><dt>École</dt><dd>ESUP Puteaux (92)</dd></div>
+        <div><dt>Examen</dt><dd>Session 2027</dd></div>
+        <div><dt>Bac</dt><dd>STMG, lycée Saint-Exupéry, Mantes-la-Jolie (2024)</dd></div>
+        <div><dt>Recherche</dt><dd>Alternance 2026–2027</dd></div>
+        <div><dt>Qualités</dt><dd>Sens du service et de l’écoute, esprit d’équipe, autonomie et rigueur, curiosité technique</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ===================== BTS SIO ===================== -->
+  <section class="section" id="bts" aria-labelledby="bts-title">
+    <div class="section-head">
+      <p class="eyebrow">Le diplôme</p>
+      <h2 id="bts-title">Le BTS SIO, option SISR</h2>
+      <p class="intro">Le BTS Services Informatiques aux Organisations est un diplôme bac+2 préparé en deux ans. L’option <strong>SISR</strong> (Solutions d’Infrastructure, Systèmes et Réseaux) forme des techniciens qui installent, administrent et sécurisent les réseaux, les serveurs et les services d’une organisation, et qui assistent ses utilisateurs. L’autre option, SLAM, est tournée vers le développement d’applications.</p>
+    </div>
+    <div class="blocs">
+      <article class="bloc is-here">
+        <p class="eyebrow">Bloc 1 · commun</p>
+        <h3>Support et mise à disposition de services informatiques</h3>
+        <p>Gérer le patrimoine informatique, répondre aux incidents et aux demandes, travailler en mode projet, mettre un service à disposition des utilisateurs, organiser son développement professionnel.</p>
+        <p class="exam">Épreuve E5 · oral · coef. 4<br>S’appuie sur ce portfolio et le tableau de synthèse.</p>
+      </article>
+      <article class="bloc">
+        <p class="eyebrow">Bloc 2 · option SISR</p>
+        <h3>Administration des systèmes et des réseaux</h3>
+        <p>Concevoir une solution d’infrastructure (A2.1), l’installer, la tester et la déployer (A2.2), puis l’exploiter, la dépanner et la superviser (A2.3).</p>
+        <p class="exam">Épreuve E6 · oral · coef. 4<br>Projets de 2<sup>e</sup> année présentés plus bas.</p>
+      </article>
+      <article class="bloc">
+        <p class="eyebrow">Bloc 3 · commun</p>
+        <h3>Cybersécurité des services informatiques</h3>
+        <p>Protéger les données personnelles, préserver l’identité numérique de l’organisation, sécuriser les équipements et les usages, garantir la disponibilité, l’intégrité et la confidentialité des services.</p>
+        <p class="exam">Épreuve E7 · écrit · coef. 4</p>
+      </article>
+    </div>
+    <div class="bts-foot">
+      <p>Épreuves générales&nbsp;: culture générale et expression (E1), anglais (E2), mathématiques pour l’informatique (E3), culture économique, juridique et managériale (E4).</p>
+      <p>Métiers visés&nbsp;: technicien support et helpdesk, technicien systèmes et réseaux, administrateur systèmes et réseaux junior, technicien d’infrastructure.</p>
+    </div>
+  </section>
+
+  <!-- ===================== PARCOURS ===================== -->
+  <section class="section" id="parcours" aria-labelledby="parcours-title">
+    <div class="section-head">
+      <p class="eyebrow">Parcours</p>
+      <h2 id="parcours-title">Expériences et formation</h2>
+    </div>
+    <div class="tracks">
+      <div>
+        <h3 class="track-title">Expériences professionnelles</h3>
+        <ol class="timeline">
+          <li class="tl-item">
+            <p class="tl-date">1<sup>er</sup> → 27 juil. 2026 <span>· stage, 4 semaines</span></p>
+            <h3>Stagiaire en infrastructure <span class="tl-org">Its Groupe Tech</span></h3>
+            <p>Projet de mise en situation réelle&nbsp;: maquette de l’infrastructure de TechBuild SAS dans un laboratoire PNETLab et VMware Workstation. Mise en place du socle de virtualisation et rédaction de la documentation technique VMware.</p>
+            <a class="tl-link" href="#rea-techbuild">Voir la réalisation</a>
+          </li>
+          <li class="tl-item">
+            <p class="tl-date">16 → 27 févr. 2026 <span>· stage, 2 semaines</span></p>
+            <h3>Technicien support informatique <span class="tl-org">ITW Automotive · ITW de France, Beauchamp</span></h3>
+            <p>Helpdesk de niveau&nbsp;1, diagnostic et résolution d’incidents, déploiement de postes. Gestion des vulnérabilités avec Nexpose (Rapid7) dans le cadre du programme de cybersécurité BRAVE.</p>
+            <a class="tl-link" href="#rea-itw">Voir la réalisation</a>
+          </li>
+          <li class="tl-item">
+            <p class="tl-date">janv. → mars 2025 <span>· stage, 3 mois</span></p>
+            <h3>Stagiaire technicien informatique <span class="tl-org">Sopra Steria</span></h3>
+            <p>Installation logicielle et configuration de postes Windows&nbsp;11 et Linux, déploiement de VirtualBox, installation de l’agent Zabbix pour superviser des machines virtuelles, participation à la maintenance du réseau local, sensibilisation au RGPD.</p>
+          </li>
+        </ol>
+      </div>
+      <div>
+        <h3 class="track-title">Formation</h3>
+        <ol class="timeline">
+          <li class="tl-item">
+            <p class="tl-date">2025 → 2027 <span>· en cours</span></p>
+            <h3>BTS SIO, option SISR <span class="tl-org">ESUP Puteaux</span></h3>
+            <p>Services Informatiques aux Organisations, Solutions d’Infrastructure, Systèmes et Réseaux. 2<sup>e</sup> année, examen en 2027.</p>
+          </li>
+          <li class="tl-item">
+            <p class="tl-date">2021 → 2024</p>
+            <h3>Baccalauréat technologique STMG <span class="tl-org">Lycée Saint-Exupéry, Mantes-la-Jolie</span></h3>
+            <p>Sciences et technologies du management et de la gestion.</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RÉALISATIONS ===================== -->
+  <section class="section" id="realisations" aria-labelledby="rea-title">
+    <div class="section-head">
+      <p class="eyebrow">Réalisations · 2025 → 2026</p>
+      <h2 id="rea-title">Projets et réalisations</h2>
+      <p class="intro">Mes réalisations en formation et en entreprise, des plus récentes aux plus anciennes. Chaque fiche précise le contexte, ce que j’ai fait, les outils et les compétences mobilisées. Le statut indique l’avancement réel.</p>
+    </div>
+
+    <!-- Projet phare -->
+    <article class="feature is-wip" id="rea-negotech" aria-labelledby="negotech-title">
+      <div>
+        <div class="feature-top">
+          <span class="eyebrow">Projet E6 · 2<sup>e</sup> année</span>
+          <span class="pill">En cours</span>
+          <span class="rea-period">depuis août 2026</span>
+        </div>
+        <h3 id="negotech-title">NégoTech Distribution&nbsp;: mise en conformité de la plateforme d’examen</h3>
+        <p class="sum">Construire dans un laboratoire virtualisé l’infrastructure d’une PME fictive qui réponde à chaque exigence de l’annexe&nbsp;II.E du référentiel (environnement technologique de certification), puis prouver cette conformité dans un dossier.</p>
+      </div>
+
+      <dl class="ctx">
+        <div><dt>Client fictif</dt><dd>NégoTech Distribution, négoce de matériel informatique, 35 salariés</dd></div>
+        <div><dt>Sites</dt><dd>Siège à Paris (27 personnes), entrepôt à Lille (8 personnes)</dd></div>
+        <div><dt>Contraintes</dt><dd>RGPD, bonnes pratiques ANSSI, budget maîtrisé (open source privilégié), vente sans interruption</dd></div>
+      </dl>
+
+      <figure class="diagram-fig">
+        <div class="diagram">
+          <svg class="arch" viewBox="0 0 920 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="arch-t arch-d">
+            <title id="arch-t">Architecture cible du projet NégoTech</title>
+            <desc id="arch-d">Internet est relié au pare-feu FW-EDGE (pfSense 2.8.1, en place) hébergé dans Proxmox VE. Le pare-feu dessert quatre périmètres&nbsp;: VLAN 10 ADMIN 10.10.10.0/24, VLAN 20 SERVEURS 10.10.20.0/24 où le contrôleur de domaine DC1-WIN est en cours d’installation, VLAN 30 UTILISATEURS 10.10.30.0/24 et VLAN 40 DMZ 10.10.40.0/24. Les autres machines et le VPN IPsec vers l’entrepôt de Lille sont prévus.</desc>
+
+            <rect class="frame" x="16" y="64" width="700" height="424" rx="6"/>
+            <text class="t-frame" x="32" y="88">PROXMOX VE 9.2 · NŒUD PVE</text>
+
+            <rect class="n-ext" x="296" y="12" width="140" height="36" rx="18"/>
+            <text class="t-name" x="366" y="34" text-anchor="middle">INTERNET</text>
+            <line class="l" x1="366" y1="48" x2="366" y2="96"/>
+            <text class="t-small" x="376" y="80">WAN · NAT VMware</text>
+
+            <rect class="n-done" x="236" y="96" width="260" height="52" rx="4"/>
+            <text class="t-name" x="248" y="117">FW-EDGE · pfSense 2.8.1</text>
+            <text class="t-role" x="248" y="136">routage inter-VLAN · filtrage</text>
+            <text class="t-tag t-ok" x="486" y="117" text-anchor="end">EN PLACE</text>
+
+            <line class="l-plan" x1="496" y1="122" x2="750" y2="122"/>
+            <text class="t-small" x="623" y="113" text-anchor="middle">VPN IPsec site-à-site</text>
+            <g class="is-plan">
+              <rect class="n-plan" x="750" y="96" width="156" height="52" rx="4"/>
+              <text class="t-name" x="762" y="117">ENTREPÔT LILLE</text>
+              <text class="t-role" x="762" y="136">pare-feu distant</text>
+            </g>
+
+            <line class="l" x1="366" y1="148" x2="366" y2="178"/>
+            <line class="l" x1="108" y1="178" x2="624" y2="178"/>
+            <line class="l" x1="108" y1="178" x2="108" y2="204"/>
+            <line class="l" x1="280" y1="178" x2="280" y2="204"/>
+            <line class="l" x1="452" y1="178" x2="452" y2="204"/>
+            <line class="l" x1="624" y1="178" x2="624" y2="204"/>
+            <text class="t-if" x="114" y="196">LAN</text>
+            <text class="t-if" x="286" y="196">OPT1</text>
+            <text class="t-if" x="458" y="196">OPT2</text>
+            <text class="t-if" x="630" y="196">OPT3</text>
+
+            <rect class="n-vlan" x="28" y="204" width="160" height="46" rx="4"/>
+            <text class="t-name" x="40" y="223">ADMIN</text>
+            <text class="t-tag t-acc" x="180" y="223" text-anchor="end">VLAN 10</text>
+            <text class="t-role" x="40" y="241">10.10.10.0/24</text>
+
+            <rect class="n-vlan" x="200" y="204" width="160" height="46" rx="4"/>
+            <text class="t-name" x="212" y="223">SERVEURS</text>
+            <text class="t-tag t-acc" x="352" y="223" text-anchor="end">VLAN 20</text>
+            <text class="t-role" x="212" y="241">10.10.20.0/24</text>
+
+            <rect class="n-vlan" x="372" y="204" width="160" height="46" rx="4"/>
+            <text class="t-name" x="384" y="223">UTILISATEURS</text>
+            <text class="t-tag t-acc" x="524" y="223" text-anchor="end">VLAN 30</text>
+            <text class="t-role" x="384" y="241">10.10.30.0/24</text>
+
+            <rect class="n-vlan" x="544" y="204" width="160" height="46" rx="4"/>
+            <text class="t-name" x="556" y="223">DMZ</text>
+            <text class="t-tag t-acc" x="696" y="223" text-anchor="end">VLAN 40</text>
+            <text class="t-role" x="556" y="241">10.10.40.0/24</text>
+
+            <g class="is-plan">
+              <rect class="n-plan" x="28" y="260" width="160" height="36" rx="3"/>
+              <text class="t-name" x="40" y="275">SUPERVISION</text>
+              <text class="t-role" x="40" y="289">Zabbix · alertes</text>
+              <rect class="n-plan" x="28" y="304" width="160" height="36" rx="3"/>
+              <text class="t-name" x="40" y="319">ADMIN-JUMP</text>
+              <text class="t-role" x="40" y="333">bastion · Ansible</text>
+            </g>
+
+            <rect class="n-wip" x="200" y="260" width="160" height="36" rx="3"/>
+            <text class="t-name" x="212" y="275">DC1-WIN</text>
+            <text class="t-tag t-wip" x="352" y="275" text-anchor="end">EN COURS</text>
+            <text class="t-role" x="212" y="289">AD DS · DNS · DHCP</text>
+            <g class="is-plan">
+              <rect class="n-plan" x="200" y="304" width="160" height="36" rx="3"/>
+              <text class="t-name" x="212" y="319">LNX1-WEB</text>
+              <text class="t-role" x="212" y="333">MariaDB · GLPI · web</text>
+              <rect class="n-plan" x="200" y="348" width="160" height="36" rx="3"/>
+              <text class="t-name" x="212" y="363">NEXTCLOUD</text>
+              <text class="t-role" x="212" y="377">partage · habilitations</text>
+              <rect class="n-plan" x="200" y="392" width="160" height="36" rx="3"/>
+              <text class="t-name" x="212" y="407">BACKUP</text>
+              <text class="t-role" x="212" y="421">Proxmox Backup Server</text>
+              <rect class="n-plan" x="200" y="436" width="160" height="36" rx="3"/>
+              <text class="t-name" x="212" y="451">WEB ×2 + HAPROXY</text>
+              <text class="t-role" x="212" y="465">répartition de charge</text>
+            </g>
+
+            <g class="is-plan">
+              <rect class="n-plan" x="372" y="260" width="160" height="36" rx="3"/>
+              <text class="t-name" x="384" y="275">CLIENT-WIN</text>
+              <text class="t-role" x="384" y="289">poste joint au domaine</text>
+              <rect class="n-plan" x="372" y="304" width="160" height="36" rx="3"/>
+              <text class="t-name" x="384" y="319">MOBILE</text>
+              <text class="t-role" x="384" y="333">Wi-Fi · VPN</text>
+            </g>
+
+            <g class="is-plan">
+              <rect class="n-plan" x="544" y="260" width="160" height="36" rx="3"/>
+              <text class="t-name" x="556" y="275">REVERSE PROXY</text>
+              <text class="t-role" x="556" y="289">TLS · publication</text>
+            </g>
+          </svg>
+        </div>
+        <ul class="legend" aria-label="Légende du schéma">
+          <li><span class="sw sw-done" aria-hidden="true"></span>En place</li>
+          <li><span class="sw sw-wip" aria-hidden="true"></span>En cours</li>
+          <li><span class="sw sw-plan" aria-hidden="true"></span>Prévu</li>
+        </ul>
+        <figcaption class="fig-cap">Architecture cible dans Proxmox VE, lui-même installé en machine virtuelle dans VMware Workstation (virtualisation imbriquée). Noms et adresses issus de mon plan d’adressage.</figcaption>
+      </figure>
+
+      <div>
+        <p class="block-title">Avancement par phase</p>
+        <ol class="phases">
+          <li class="ph is-done"><span class="ph-num">0</span><span class="ph-title">Cadrage</span><span class="ph-desc">contexte client, plan d’adressage</span><span class="ph-state">Terminé</span></li>
+          <li class="ph is-done"><span class="ph-num">1</span><span class="ph-title">Socle</span><span class="ph-desc">Proxmox VE, bridges, pfSense</span><span class="ph-state">Terminé</span></li>
+          <li class="ph is-wip"><span class="ph-num">2</span><span class="ph-title">Identité</span><span class="ph-desc">AD DS, DNS, DHCP, GPO</span><span class="ph-state">En cours</span></li>
+          <li class="ph is-plan"><span class="ph-num">3</span><span class="ph-title">Données</span><span class="ph-desc">Nextcloud, sauvegarde, habilitations</span><span class="ph-state">Prévu</span></li>
+          <li class="ph is-plan"><span class="ph-num">4</span><span class="ph-title">Sécurité</span><span class="ph-desc">Suricata, Squid, TLS, GLPI, Wireshark</span><span class="ph-state">Prévu</span></li>
+          <li class="ph is-plan"><span class="ph-num">5</span><span class="ph-title">Haute disponibilité</span><span class="ph-desc">HAProxy, Zabbix, IPsec, WireGuard, Ansible</span><span class="ph-state">Prévu</span></li>
+          <li class="ph is-plan"><span class="ph-num">6</span><span class="ph-title">Automatisation</span><span class="ph-desc">script CSV RH vers comptes AD</span><span class="ph-state">Prévu</span></li>
+          <li class="ph is-plan"><span class="ph-num">7</span><span class="ph-title">Mobilité</span><span class="ph-desc">smartphone en Wi-Fi puis en VPN</span><span class="ph-state">Prévu</span></li>
+          <li class="ph is-plan"><span class="ph-num">8</span><span class="ph-title">Recette</span><span class="ph-desc">checklist, scénarios de panne</span><span class="ph-state">Prévu</span></li>
+          <li class="ph is-plan"><span class="ph-num">9</span><span class="ph-title">Dossier</span><span class="ph-desc">dossier de conformité, soutenance</span><span class="ph-state">Prévu</span></li>
+        </ol>
+      </div>
+
+      <div class="cols">
+        <div>
+          <p class="block-title">Ce que j’ai réalisé</p>
+          <ul class="list">
+            <li>Rédaction du contexte client, du cahier des charges et d’un plan de projet en 10&nbsp;phases, avec une checklist qui relie chaque exigence de l’annexe à une solution.</li>
+            <li>Installation de <strong>Proxmox VE 9.2</strong> dans une VM VMware Workstation (virtualisation imbriquée VT-x), passage sur les dépôts sans abonnement, import des images ISO.</li>
+            <li>Déploiement du pare-feu <strong>FW-EDGE</strong> (pfSense 2.8.1) avec quatre périmètres, ADMIN, SERVEURS, UTILISATEURS et DMZ, chacun sur son bridge et son sous-réseau /24.</li>
+            <li>Premières règles de filtrage par interface selon le principe du moindre privilège, par exemple n’autoriser que les requêtes DNS sortantes.</li>
+            <li>En cours&nbsp;: contrôleur de domaine <strong>DC1-WIN</strong> sous Windows Server 2022 (domaine negotech.lan) avec DNS, DHCP et relais DHCP sur pfSense pour le réseau UTILISATEURS.</li>
+            <li>Une première maquette (juin 2026) reposait sur VMware Workstation seul. Je l’ai reconstruite en août sur Proxmox VE pour me rapprocher d’un vrai datacenter.</li>
+          </ul>
+        </div>
+        <div class="meta-row">
+          <div>
+            <p class="block-title">Choix techniques</p>
+            <ul class="list">
+              <li><strong>Proxmox VE</strong>&nbsp;: gratuit, bridges et VLAN natifs, sauvegarde intégrée.</li>
+              <li><strong>pfSense</strong>&nbsp;: routage inter-VLAN, VPN, IDS/IPS et proxy au même endroit.</li>
+              <li><strong>Windows Server + Debian</strong>&nbsp;: l’annexe exige deux OS serveurs, dont un open source.</li>
+              <li><strong>Quatre périmètres</strong>&nbsp;: les postes ne joignent les serveurs que sur les ports nécessaires.</li>
+            </ul>
+          </div>
+          <ul class="chips" aria-label="Technologies">
+            <li>Proxmox VE 9.2</li><li>VMware Workstation Pro</li><li>pfSense CE 2.8.1</li><li>Windows Server 2022</li><li>Debian 13</li><li>VLAN 802.1Q</li>
+          </ul>
+          <p class="comp"><span class="k">E6</span><span class="atag">A2.1 Conception</span><span class="atag">A2.2 Installation et déploiement</span></p>
+          <p class="comp"><span class="k">E5</span><span class="ctag">Patrimoine</span><span class="ctag">Projet</span><span class="ctag">Service</span></p>
+          <div>
+            <p class="block-title">Livrables</p>
+            <ul class="docs">
+              <li data-doc="docs/negotech-contexte.pdf"><span class="doc-name">Dossier de conformité, section 1&nbsp;: contexte de l’organisation</span><span class="doc-type">PDF</span></li>
+              <li data-doc="docs/negotech-plan-de-projet.pdf"><span class="doc-name">Plan de projet et checklist de l’annexe II.E</span><span class="doc-type">PDF</span></li>
+              <li data-doc="docs/negotech-captures.pdf"><span class="doc-name">Captures Proxmox et pfSense</span><span class="doc-type">PDF</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Toutes les réalisations -->
+    <div class="list-head">
+      <h3>Toutes les réalisations</h3>
+      <div class="filters" role="group" aria-label="Filtrer les réalisations">
+        <button type="button" data-filter="all" aria-pressed="true">Tout <span class="count">12</span></button>
+        <button type="button" data-filter="e6" aria-pressed="false">Projets E6 <span class="count">2</span></button>
+        <button type="button" data-filter="pro" aria-pressed="false">En entreprise <span class="count">2</span></button>
+        <button type="button" data-filter="formation" aria-pressed="false">En formation <span class="count">8</span></button>
+      </div>
+    </div>
+    <p class="sr-only" id="filter-status" aria-live="polite"></p>
+
+    <div class="rea-list">
+
+      <!-- Salle de formation -->
+      <article class="rea is-wip" id="rea-salle" data-cat="e6">
+        <div class="rea-meta">
+          <p class="rea-period">sept. 2026 → en cours</p>
+          <p class="rea-cat">Projet E6 · 2<sup>e</sup> année</p>
+          <span class="pill">En cours</span>
+        </div>
+        <div class="rea-body">
+          <h3>Déploiement d’une salle de formation virtuelle</h3>
+          <p class="rea-sum">Concevoir, installer, superviser et documenter en 25&nbsp;heures une infrastructure de TP pour préparer l’épreuve E6&nbsp;: DHCP, DNS, annuaire, partages, intranet et supervision.</p>
+          <ul class="chips" aria-label="Technologies"><li>Windows Server</li><li>AD DS</li><li>DNS</li><li>DHCP</li><li>Debian</li><li>Apache</li><li>Zabbix</li><li>cycle en V</li></ul>
+          <p class="comp"><span class="k">E6</span><span class="atag">A2.1</span><span class="atag">A2.2</span><span class="atag">A2.3</span><span class="k" style="margin-left:8px">E5</span><span class="ctag">Projet</span><span class="ctag">Service</span></p>
+          <details>
+            <summary><span class="when-closed">Voir le détail</span><span class="when-open">Masquer le détail</span></summary>
+            <div class="rea-detail">
+              <div>
+                <h4>Contexte</h4>
+                <p>L’établissement veut une salle de formation virtuelle où chaque poste étudiant est intégré à une infrastructure simulée. Contraintes&nbsp;: 25&nbsp;heures en cinq séances de 5&nbsp;h, uniquement des machines virtuelles, quatre livrables et une soutenance de 10&nbsp;minutes. J’ai retenu les trois niveaux du sujet, supervision et simulation de pannes comprises.</p>
+              </div>
+              <div>
+                <h4>Démarche</h4>
+                <ul class="list">
+                  <li><strong>Cycle en V</strong>&nbsp;: chaque phase de conception a son test miroir, et le cahier de recette est écrit dès l’analyse du besoin.</li>
+                  <li>Grille d’analyse&nbsp;: besoin exprimé, exigence vérifiable, solution retenue, justification.</li>
+                  <li>Choix argumentés&nbsp;: annuaire Microsoft (intégration native des postes et des GPO), Zabbix plutôt que Nagios ou Centreon (agent multiplateforme, modèles prêts à l’emploi), adresses dynamiques pour les clients et fixes pour les serveurs.</li>
+                  <li>Déploiement dans l’ordre des dépendances&nbsp;: réseau, annuaire et DNS, DHCP, jonction des postes, partages, intranet, supervision. Chaque brique est installée, testée puis figée par un instantané.</li>
+                  <li>Recette sur trois niveaux (unitaire, intégration, fonctionnel), dont un test négatif&nbsp;: un compte élève doit se voir refuser le dossier des professeurs.</li>
+                  <li>Politique de supervision avec seuils&nbsp;: service DNS arrêté (critique), disque sous 15&nbsp;% d’espace libre, processeur au-dessus de 85&nbsp;% pendant 5&nbsp;minutes, perte de paquets au-delà de 20&nbsp;%.</li>
+                  <li>Fiches d’incident normalisées&nbsp;: symptôme, détection, diagnostic, cause, résolution, prévention.</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Livrables</h4>
+                <ul class="docs">
+                  <li data-doc="docs/salle-formation-methodologie.pdf"><span class="doc-name">Méthodologie de conduite de projet</span><span class="doc-type">PDF</span></li>
+                  <li><span class="doc-note">À venir&nbsp;: dossier de conception, documentation technique, rapport d’exploitation, guide utilisateur.</span></li>
+                </ul>
+              </div>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- Health4All -->
+      <article class="rea is-plan" id="rea-health4all" data-cat="e6">
+        <div class="rea-meta">
+          <p class="rea-period">2026–2027 · 60 à 70 h</p>
+          <p class="rea-cat">Projet E6 · 2<sup>e</sup> année</p>
+          <span class="pill">Planifié</span>
+        </div>
+        <div class="rea-body">
+          <h3>Health4All&nbsp;: refonte haute disponibilité d’un SI de santé</h3>
+          <p class="rea-sum">Refondre le système d’information d’un prestataire qui héberge des données de santé, avec trois impératifs&nbsp;: aucune interruption, sécurité maximale et télétravail sécurisé.</p>
+          <ul class="chips" aria-label="Technologies"><li>Proxmox VE</li><li>pfSense</li><li>HAProxy</li><li>Keepalived</li><li>Nextcloud</li><li>WireGuard</li><li>Suricata</li><li>Ansible</li></ul>
+          <p class="comp"><span class="k">E6</span><span class="atag">A2.1</span><span class="atag">A2.2</span><span class="atag">A2.3</span></p>
+          <details>
+            <summary><span class="when-closed">Voir le programme</span><span class="when-open">Masquer le programme</span></summary>
+            <div class="rea-detail">
+              <div>
+                <h4>Contexte</h4>
+                <p>Health4All gère des données médicales pour des cliniques régionales. Son infrastructure est vieillissante, cloisonnée et ne permet pas le télétravail. La refonte doit respecter le RGPD et le cadre HDS (hébergement de données de santé).</p>
+              </div>
+              <div>
+                <h4>Les six phases</h4>
+                <ol class="steps">
+                  <li><strong>Conception et cadre légal</strong>&nbsp;: note RGPD et HDS, VLAN DMZ, SERVEURS, ADMIN et INVITÉS, cahier de recette écrit avant la réalisation.</li>
+                  <li><strong>Socle</strong>&nbsp;: hyperviseur, pfSense avec filtrage inter-VLAN et proxy Squid, Windows Server (AD, DNS, DHCP) et serveur Linux pour la base de données.</li>
+                  <li><strong>Haute disponibilité</strong>&nbsp;: deux serveurs web derrière HAProxy, adresse IP virtuelle avec Keepalived ou CARP, test de panne par arrêt brutal d’une VM.</li>
+                  <li><strong>Mobilité</strong>&nbsp;: Nextcloud relié à l’annuaire en HTTPS, VPN WireGuard ou OpenVPN testé depuis un smartphone, guide utilisateur du VPN.</li>
+                  <li><strong>Exploitation</strong>&nbsp;: sauvegarde automatisée et test de restauration, alertes Zabbix, IDS Suricata, analyse de trames avec Wireshark.</li>
+                  <li><strong>Automatisation</strong>&nbsp;: création de comptes AD depuis un fichier CSV, serveur web standardisé avec Ansible.</li>
+                </ol>
+              </div>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- Infrastructure de services -->
+      <article class="rea is-wip" id="rea-services" data-cat="formation">
+        <div class="rea-meta">
+          <p class="rea-period">août → sept. 2026</p>
+          <p class="rea-cat">Formation · 2<sup>e</sup> année</p>
+          <span class="pill">En cours</span>
+        </div>
+        <div class="rea-body">
+          <h3>Infrastructure de services&nbsp;: AD, GLPI 11 et poste d’audit Kali</h3>
+          <p class="rea-sum">Monter sous VMware Workstation une petite infrastructure d’entreprise&nbsp;: un contrôleur de domaine, un serveur de gestion de parc GLPI et une machine Kali Linux pour tester la sécurité.</p>
+          <ul class="chips" aria-label="Technologies"><li>VMware Workstation</li><li>Windows Server</li><li>Debian 13</li><li>Apache</li><li>MariaDB</li><li>PHP</li><li>GLPI 11</li><li>Kali Linux</li><li>draw.io</li></ul>
+          <p class="comp"><span class="k">E5</span><span class="ctag">Patrimoine</span><span class="ctag">Service</span></p>
+          <details>
+            <summary><span class="when-closed">Voir le détail</span><span class="when-open">Masquer le détail</span></summary>
+            <div class="rea-detail">
+              <div>
+                <h4>Architecture (schéma réalisé sous draw.io)</h4>
+                <div class="mini-table-wrap">
+                  <table class="mini-table">
+                    <thead><tr><th scope="col">Machine</th><th scope="col">Rôle</th><th scope="col">Adresse</th></tr></thead>
+                    <tbody>
+                      <tr><td>RFW01</td><td>Routeur et pare-feu, sortie Internet (WAN en DHCP)</td><td class="mono">192.168.20.254/24</td></tr>
+                      <tr><td>DC01</td><td>AD DS, DNS, DHCP</td><td class="mono">192.168.20.1/24</td></tr>
+                      <tr><td>PARC01</td><td>Apache, MariaDB, PHP, GLPI et inventaire</td><td class="mono">192.168.20.2/24</td></tr>
+                      <tr><td>SECU01</td><td>Kali Linux, tests de sécurité</td><td class="mono">192.168.20.3/24</td></tr>
+                      <tr><td>PC01 à PC03</td><td>Postes clients</td><td class="mono">DHCP</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div>
+                <h4>Réalisé</h4>
+                <ul class="list">
+                  <li>Schéma réseau et plan d’adressage.</li>
+                  <li>VM Windows Server <strong>SRV-AD01</strong> sous VMware Workstation, avec les VMware Tools.</li>
+                  <li>VM Debian&nbsp;13&nbsp;: pile Apache, MariaDB et PHP, puis déploiement de <strong>GLPI 11.0.8</strong> dans <span class="mono">/var/www/html</span>.</li>
+                  <li>VM Kali Linux avec la collection d’outils par défaut, pour les tests de sécurité.</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Étapes suivantes</h4>
+                <p>Inventaire automatique des postes avec l’agent GLPI, suivi de tickets, tests depuis Kali, puis une version conteneurisée de GLPI avec Docker Compose&nbsp;: MariaDB et GLPI, secrets dans un fichier <span class="mono">.env</span>, volumes persistants, script de sauvegarde et de restauration de la base.</p>
+              </div>
+              <div>
+                <h4>Livrables</h4>
+                <ul class="docs">
+                  <li data-doc="docs/services-schema.pdf"><span class="doc-name">Schéma réseau «&nbsp;Services informatiques&nbsp;»</span><span class="doc-type">PDF</span></li>
+                </ul>
+              </div>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- TechBuild -->
+      <article class="rea is-done" id="rea-techbuild" data-cat="pro">
+        <div class="rea-meta">
+          <p class="rea-period">1<sup>er</sup> → 27 juil. 2026</p>
+          <p class="rea-cat">En entreprise · stage</p>
+          <span class="pill">Réalisé</span>
+        </div>
+        <div class="rea-body">
+          <h3>TechBuild SAS&nbsp;: maquette d’une infrastructure multi-sites</h3>
+          <p class="rea-sum">Pendant mon stage chez Its Groupe Tech, préparer la maquette de référence d’une PME de 45&nbsp;personnes sur deux sites (Paris et Lyon) dans un laboratoire PNETLab et VMware, et documenter l’environnement pour qu’il soit reproductible.</p>
+          <ul class="chips" aria-label="Technologies"><li>VMware Workstation Pro 17</li><li>PNETLab</li><li>Cisco IOL</li><li>Windows Server 2022</li><li>Debian</li><li>pfSense</li></ul>
+          <p class="comp"><span class="k">E5</span><span class="ctag">Projet</span><span class="ctag">Service</span></p>
+          <details>
+            <summary><span class="when-closed">Voir le détail</span><span class="when-open">Masquer le détail</span></summary>
+            <div class="rea-detail">
+              <div>
+                <h4>Contexte</h4>
+                <p>TechBuild SAS n’a aucune infrastructure structurée&nbsp;: postes en groupe de travail, pas de domaine, pas de supervision, sauvegardes manuelles sur disques externes et VPN grand public entre les sites. La maquette sert de référence avant la mise en production.</p>
+              </div>
+              <div>
+                <h4>Les cinq livrables du projet</h4>
+                <ol class="steps">
+                  <li><strong>Réseau</strong> (PNETLab)&nbsp;: 4 VLAN par site, routage OSPF, VPN IPsec site-à-site, ACL, pfSense en bordure.</li>
+                  <li><strong>Systèmes</strong>&nbsp;: forêt techbuild.lan (AD DS, DNS, DHCP), une OU par service, 3 GPO, partage Samba sur Debian à Lyon, poste Windows&nbsp;11 dans le domaine.</li>
+                  <li><strong>Supervision et parc</strong>&nbsp;: Zabbix avec agents et SNMP, GLPI avec inventaire, trois incidents types traités.</li>
+                  <li><strong>Sécurité</strong>&nbsp;: scan Nexpose, captures Wireshark, reconnaissance Nmap, note de synthèse pour la direction.</li>
+                  <li><strong>Documentation</strong>&nbsp;: dossier d’exploitation (DEX) et journal technique.</li>
+                </ol>
+              </div>
+              <div>
+                <h4>Ma contribution</h4>
+                <ul class="list">
+                  <li>Mise en place du socle de virtualisation&nbsp;: VMware Workstation Pro, virtualisation imbriquée (VT-x) pour PNETLab, carte NAT pour Internet et réseau VMnet dédié vers PNETLab.</li>
+                  <li>Rédaction de la <strong>documentation technique VMware Workstation</strong> (version 1.0 du 1<sup>er</sup> juillet 2026)&nbsp;: prérequis, installation, création de VM, modes réseau NAT, pont et hôte seul, VMware Tools, instantanés et dépannage des erreurs les plus fréquentes.</li>
+                  <li>Diaporama de 12&nbsp;diapositives qui présente la procédure, intégré au dossier d’exploitation (livrable&nbsp;5).</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Livrables</h4>
+                <ul class="docs">
+                  <li data-doc="docs/techbuild-doc-vmware.pdf"><span class="doc-name">Documentation technique VMware Workstation</span><span class="doc-type">PDF</span></li>
+                  <li data-doc="docs/techbuild-diaporama-vmware.pdf"><span class="doc-name">Diaporama de la procédure</span><span class="doc-type">PDF</span></li>
+                </ul>
+              </div>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- Observabilité -->
+      <article class="rea is-done" id="rea-observabilite" data-cat="formation">
+        <div class="rea-meta">
+          <p class="rea-period">juin 2026</p>
+          <p class="rea-cat">Formation · 1<sup>re</sup> année</p>
+          <span class="pill">Réalisé</span>
+        </div>
+        <div class="rea-body">
+          <h3>Supervision et observabilité avec Zabbix, Grafana et Loki</h3>
+          <p class="rea-sum">Utiliser trois outils complémentaires&nbsp;: Zabbix pour l’état des machines et les alertes, Grafana pour l’historique en tableaux de bord, Loki pour retrouver la cause dans les journaux.</p>
+          <ul class="chips" aria-label="Technologies"><li>Zabbix</li><li>agent Zabbix</li><li>Grafana</li><li>Loki</li></ul>
+          <p class="comp"><span class="k">E5</span><span class="ctag">Patrimoine</span><span class="ctag">Service</span></p>
+          <details>
+            <summary><span class="when-closed">Voir le détail</span><span class="when-open">Masquer le détail</span></summary>
+            <div class="rea-detail">
+              <ul class="list">
+                <li>Rôle de chaque outil face aux trois questions de l’administrateur&nbsp;: ma machine est-elle en bonne santé, que s’est-il passé et quand, pourquoi est-ce arrivé.</li>
+                <li>Installation et configuration de l’agent Zabbix sur une machine supervisée, puis suivi de ses métriques (processeur, mémoire, disque) sur la plateforme de l’école.</li>
+                <li>Consultation des tableaux de bord Grafana et recherche dans les journaux avec Loki.</li>
+                <li>Lien avec l’entreprise&nbsp;: chez Sopra Steria, j’avais déjà installé l’agent Zabbix pour superviser des machines virtuelles.</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- Portfolio -->
+      <article class="rea is-done" id="rea-portfolio" data-cat="formation">
+        <div class="rea-meta">
+          <p class="rea-period">avr. → sept. 2026</p>
+          <p class="rea-cat">Formation · développement pro</p>
+          <span class="pill">Réalisé</span>
+        </div>
+        <div class="rea-body">
+          <h3>Portfolio web et identité professionnelle</h3>
+          <p class="rea-sum">Présenter mon parcours et mes réalisations en ligne, et tenir à jour un profil LinkedIn cohérent avec ce portfolio.</p>
+          <ul class="chips" aria-label="Technologies"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>GitHub</li><li>LinkedIn</li></ul>
+          <p class="comp"><span class="k">E5</span><span class="ctag">Présence en ligne</span><span class="ctag">Dév. pro</span></p>
+          <details>
+            <summary><span class="when-closed">Voir le détail</span><span class="when-open">Masquer le détail</span></summary>
+            <div class="rea-detail">
+              <ul class="list">
+                <li>Site statique en HTML, CSS et JavaScript, sans dépendance, lisible sur ordinateur comme sur mobile, en thème clair ou sombre.</li>
+                <li>Contenu organisé pour l’épreuve E5&nbsp;: réalisations, tableau de synthèse, compétences, certifications et veille technologique.</li>
+                <li>Plusieurs versions depuis avril 2026, hébergement sur GitHub Pages.</li>
+                <li>Profil LinkedIn qui présente mes réalisations techniques.</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- Active Directory -->
+      <article class="rea is-done" id="rea-ad" data-cat="formation">
+        <div class="rea-meta">
+          <p class="rea-period">janv. → mai 2026</p>
+          <p class="rea-cat">Formation · 1<sup>re</sup> année</p>
+          <span class="pill">Réalisé</span>
+        </div>
+        <div class="rea-body">
+          <h3>Active Directory&nbsp;: domaine esn.local et durcissement des accès</h3>
+          <p class="rea-sum">Déployer un contrôleur de domaine Windows Server 2019 pour une ESN, structurer l’annuaire, appliquer des stratégies de sécurité, puis répondre à des demandes d’évolution.</p>
+          <ul class="chips" aria-label="Technologies"><li>Windows Server 2019</li><li>AD DS</li><li>DNS</li><li>GPO</li><li>FGPP</li><li>PowerShell</li><li>VMware Workstation</li></ul>
+          <p class="comp"><span class="k">E5</span><span class="ctag">Patrimoine</span><span class="ctag">Incidents</span><span class="ctag">Projet</span><span class="ctag">Service</span></p>
+          <details>
+            <summary><span class="when-closed">Voir le détail</span><span class="when-open">Masquer le détail</span></summary>
+            <div class="rea-detail">
+              <div>
+                <h4>Projet en quatre séances</h4>
+                <ol class="steps">
+                  <li><strong>Installation</strong>&nbsp;: VM SRV-AD01 sous VMware Workstation, adresse fixe 192.168.1.10 et DNS local.</li>
+                  <li><strong>Annuaire</strong>&nbsp;: rôle AD DS et promotion en contrôleur du domaine esn.local (NetBIOS ESN), vérifiée avec <span class="mono">Get-ADDomain</span>.</li>
+                  <li><strong>Structure et sécurité</strong>&nbsp;: import d’utilisateurs depuis un fichier CSV, OU Direction, Informatique, Comptabilité et RH, GPO de politique de mot de passe et de verrouillage des comptes.</li>
+                  <li><strong>Audit</strong>&nbsp;: plan d’audit des événements de sécurité et politique d’authentification à deux facteurs pour les comptes à privilèges.</li>
+                </ol>
+              </div>
+              <div>
+                <h4>Demandes d’évolution (BTS blanc, mai 2026)</h4>
+                <ul class="list">
+                  <li>Script PowerShell de conformité&nbsp;: il repère les comptes importés dont le mot de passe n’a jamais changé depuis l’import (même <span class="mono">PasswordLastSet</span>), un risque pour l’intégrité si le fichier CSV a été intercepté.</li>
+                  <li>Stratégie de mot de passe affinée (FGPP) pour le groupe Admins du domaine&nbsp;: 12&nbsp;caractères minimum et historique de 24, vérifiée avec <span class="mono">Get-ADFineGrainedPasswordPolicy</span>.</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Livrables</h4>
+                <ul class="docs">
+                  <li data-doc="docs/ad-esn-diaporama.pdf"><span class="doc-name">Diaporama Active Directory (13 diapositives)</span><span class="doc-type">PDF</span></li>
+                  <li data-doc="docs/ad-evolutions.pdf"><span class="doc-name">Script de conformité et captures FGPP</span><span class="doc-type">PDF</span></li>
+                </ul>
+              </div>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- GLPI -->
+      <article class="rea is-done" id="rea-glpi" data-cat="formation">
+        <div class="rea-meta">
+          <p class="rea-period">mars 2026</p>
+          <p class="rea-cat">Formation · 1<sup>re</sup> année</p>
+          <span class="pill">Réalisé</span>
+        </div>
+        <div class="rea-body">
+          <h3>GLPI&nbsp;: gestion de parc et traitement des tickets</h3>
+          <p class="rea-sum">Prendre en main GLPI pour inventorier le parc et traiter les demandes des utilisateurs selon les bonnes pratiques ITIL&nbsp;4.</p>
+          <ul class="chips" aria-label="Technologies"><li>GLPI</li><li>agent GLPI</li><li>ITIL 4</li><li>PowerShell (WMI)</li></ul>
+          <p class="comp"><span class="k">E5</span><span class="ctag">Patrimoine</span><span class="ctag">Incidents</span></p>
+          <details>
+            <summary><span class="when-closed">Voir le détail</span><span class="when-open">Masquer le détail</span></summary>
+            <div class="rea-detail">
+              <ul class="list">
+                <li>Organisation de l’outil (Parc, Assistance, Gestion, Outils, Administration, Configuration) et rôle de la base de configuration (CMDB).</li>
+                <li>Création d’utilisateurs et de profils, configuration de l’application.</li>
+                <li>Cycle de vie d’un ticket&nbsp;: déclaration, qualification (incident ou demande), attribution, résolution et clôture.</li>
+                <li>Inventaire des postes Windows avec l’agent GLPI, collecte d’informations système avec PowerShell et WMI.</li>
+                <li>Repères ITIL&nbsp;4&nbsp;: gestion des incidents, des demandes de service et principes directeurs.</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- SNMP -->
+      <article class="rea is-done" id="rea-snmp" data-cat="formation">
+        <div class="rea-meta">
+          <p class="rea-period">mars 2026</p>
+          <p class="rea-cat">Formation · 1<sup>re</sup> année</p>
+          <span class="pill">Réalisé</span>
+        </div>
+        <div class="rea-body">
+          <h3>Supervision SNMP&nbsp;: de la trame au script</h3>
+          <p class="rea-sum">Comprendre SNMP jusqu’au niveau de la trame, puis interroger des équipements avec un MIB Browser, PowerShell et Python.</p>
+          <ul class="chips" aria-label="Technologies"><li>SNMP v2c / v3</li><li>MIB et OID</li><li>iReasoning MIB Browser</li><li>PowerShell</li><li>Python (pysnmp)</li></ul>
+          <p class="comp"><span class="k">E5</span><span class="ctag">Patrimoine</span><span class="ctag">Incidents</span></p>
+          <details>
+            <summary><span class="when-closed">Voir le détail</span><span class="when-open">Masquer le détail</span></summary>
+            <div class="rea-detail">
+              <ul class="list">
+                <li>Rôles du gestionnaire, de l’agent et de la MIB&nbsp;; opérations GET, WALK et TRAP&nbsp;; différences entre SNMPv1, v2c et v3.</li>
+                <li>Exploration d’une machine avec iReasoning MIB Browser et lecture des messages SNMP transportés en UDP (ports 161 et 162).</li>
+                <li>PowerShell&nbsp;: module SNMP, fonctions <span class="mono">Get-SnmpValue</span> et <span class="mono">Get-SnmpWalk</span>, lecture de sysDescr (OID <span class="mono">1.3.6.1.2.1.1.1.0</span>) et rapport des interfaces réseau.</li>
+                <li>Python&nbsp;: mêmes requêtes avec la bibliothèque pysnmp dans Jupyter.</li>
+                <li>Sécurisation&nbsp;: communautés non devinables, accès en lecture seule, filtrage par adresse IP, SNMP isolé dans un VLAN d’administration, SNMPv3 dès que possible.</li>
+                <li>Lien avec l’entreprise&nbsp;: chez ITW, la sécurisation de SNMP faisait partie des corrections demandées sur les imprimantes.</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- ITW -->
+      <article class="rea is-done" id="rea-itw" data-cat="pro">
+        <div class="rea-meta">
+          <p class="rea-period">16 → 27 févr. 2026</p>
+          <p class="rea-cat">En entreprise · stage</p>
+          <span class="pill">Réalisé</span>
+        </div>
+        <div class="rea-body">
+          <h3>ITW Automotive&nbsp;: gestion des vulnérabilités et support utilisateurs</h3>
+          <p class="rea-sum">Participer au programme de cybersécurité du site&nbsp;: scanner le parc avec Nexpose, analyser les vulnérabilités des imprimantes réseau et appliquer les corrections, en plus du support de niveau&nbsp;1.</p>
+          <ul class="chips" aria-label="Technologies"><li>Nexpose (Rapid7)</li><li>N-able</li><li>TLS</li><li>SNMP</li><li>Windows 10/11</li></ul>
+          <p class="comp"><span class="k">E5</span><span class="ctag">Patrimoine</span><span class="ctag">Incidents</span><span class="ctag">Service</span></p>
+          <details>
+            <summary><span class="when-closed">Voir le détail</span><span class="when-open">Masquer le détail</span></summary>
+            <div class="rea-detail">
+              <div>
+                <h4>Contexte</h4>
+                <p>ITW de France (site de Beauchamp) appartient à la division Fastener Europe du groupe américain ITW et fabrique des systèmes de fixation pour l’automobile. Le site compte environ 150&nbsp;salariés&nbsp;; son service informatique local se compose d’un responsable et d’un administrateur systèmes.</p>
+              </div>
+              <div>
+                <h4>Programme BRAVE</h4>
+                <p>Cinq axes&nbsp;: Backup and Recovery, Response, Awareness, Vulnerability, Endpoint. J’ai contribué aux volets <strong>Awareness</strong> (sensibilisation) et <strong>Vulnerability</strong> (gestion des vulnérabilités).</p>
+              </div>
+              <div>
+                <h4>Ce que j’ai fait</h4>
+                <ul class="list">
+                  <li>Scan des équipements avec Nexpose et lecture des rapports classés par criticité.</li>
+                  <li>Inventaire des imprimantes exposées (Lexmark, Ricoh, Zebra) avec, pour chacune, le problème et la correction&nbsp;: algorithmes HMAC faibles et versions de TLS obsolètes à désactiver, SNMP à sécuriser, certificat TLS à installer, Telnet (flux en clair) à remplacer par un protocole chiffré ou à restreindre.</li>
+                  <li>Application des corrections et contrôle de la baisse du score de risque dans Nexpose.</li>
+                  <li>Support de niveau&nbsp;1&nbsp;: diagnostic et résolution d’incidents matériels et logiciels, configuration de postes, prise en main à distance et déploiement de correctifs avec N-able.</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Livrables</h4>
+                <ul class="docs">
+                  <li data-doc="docs/itw-rapport-de-stage.pdf"><span class="doc-name">Rapport de stage ITW, février 2026</span><span class="doc-type">PDF</span></li>
+                </ul>
+              </div>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- VLAN StratAdvise -->
+      <article class="rea is-done" id="rea-vlan" data-cat="formation">
+        <div class="rea-meta">
+          <p class="rea-period">févr. → mars 2026</p>
+          <p class="rea-cat">Formation · 1<sup>re</sup> année</p>
+          <span class="pill">Réalisé</span>
+        </div>
+        <div class="rea-body">
+          <h3>StratAdvise&nbsp;: réseau multiservices segmenté en VLAN</h3>
+          <p class="rea-sum">Concevoir sous Cisco Packet Tracer le réseau d’une entreprise dont les services RH, Finances et IT sont isolés, avec services réseau, filtrage et supervision.</p>
+          <ul class="chips" aria-label="Technologies"><li>Cisco Packet Tracer</li><li>Catalyst 2960</li><li>ISR 2911</li><li>802.1Q</li><li>ACL</li><li>DHCP</li><li>SNMP</li></ul>
+          <p class="comp"><span class="k">E5</span><span class="ctag">Incidents</span><span class="ctag">Projet</span><span class="ctag">Service</span></p>
+          <details>
+            <summary><span class="when-closed">Voir le détail</span><span class="when-open">Masquer le détail</span></summary>
+            <div class="rea-detail">
+              <div>
+                <h4>Plan d’adressage</h4>
+                <div class="mini-table-wrap">
+                  <table class="mini-table">
+                    <thead><tr><th scope="col">VLAN</th><th scope="col">Service</th><th scope="col">Réseau</th><th scope="col">Passerelle</th></tr></thead>
+                    <tbody>
+                      <tr><td class="mono">2</td><td>RH</td><td class="mono">192.168.2.0/24</td><td class="mono">192.168.2.1</td></tr>
+                      <tr><td class="mono">3</td><td>Finances</td><td class="mono">192.168.3.0/24</td><td class="mono">192.168.3.1</td></tr>
+                      <tr><td class="mono">4</td><td>IT</td><td class="mono">192.168.4.0/24</td><td class="mono">192.168.4.1</td></tr>
+                      <tr><td class="mono">10</td><td>Serveurs</td><td class="mono">192.168.10.0/24</td><td class="mono">192.168.10.1</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div>
+                <h4>Réalisé</h4>
+                <ul class="list">
+                  <li>Commutateur 2960-24TT&nbsp;: création des VLAN, ports d’accès par service, lien trunk vers le routeur.</li>
+                  <li>Routeur 2911 en <em>router-on-a-stick</em>&nbsp;: une sous-interface 802.1Q par VLAN et relais DHCP (<span class="mono">ip helper-address</span>) vers le serveur 192.168.10.10.</li>
+                  <li>Serveurs DHCP (un pool par VLAN), DNS et HTTP, supervision SNMP en lecture seule.</li>
+                  <li>ACL étendue <span class="mono">BLOCK_RH_FINANCES</span> qui isole les RH des Finances, vérifiée avec <span class="mono">show access-lists</span>.</li>
+                  <li>Tests de connectivité et d’isolation, simulation de pannes et procédures de résolution.</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Livrables</h4>
+                <ul class="docs">
+                  <li data-doc="docs/vlan-stratadvise.pkt"><span class="doc-name">Fichier Packet Tracer du projet</span><span class="doc-type">PKT</span></li>
+                  <li data-doc="docs/vlan-diaporama.pdf"><span class="doc-name">Diaporama VLAN&nbsp;: schéma, VLAN, tests, DHCP</span><span class="doc-type">PDF</span></li>
+                </ul>
+              </div>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- VirtualBox -->
+      <article class="rea is-done" id="rea-virtualbox" data-cat="formation">
+        <div class="rea-meta">
+          <p class="rea-period">oct. 2025 → févr. 2026</p>
+          <p class="rea-cat">Formation · 1<sup>re</sup> année</p>
+          <span class="pill">Réalisé</span>
+        </div>
+        <div class="rea-body">
+          <h3>Premières machines virtuelles sous VirtualBox</h3>
+          <p class="rea-sum">Créer et configurer mes premières VM (Ubuntu Server, Windows Server) et maîtriser les modes réseau de VirtualBox.</p>
+          <ul class="chips" aria-label="Technologies"><li>VirtualBox</li><li>Ubuntu Server 24.04</li><li>Windows Server 2019</li><li>NAT</li><li>redirection de ports</li></ul>
+          <p class="comp"><span class="k">E5</span><span class="ctag">Patrimoine</span><span class="ctag">Dév. pro</span></p>
+          <details>
+            <summary><span class="when-closed">Voir le détail</span><span class="when-open">Masquer le détail</span></summary>
+            <div class="rea-detail">
+              <ul class="list">
+                <li>Création de VM Ubuntu Server et Windows Server 2019&nbsp;: ressources, disque, installation du système.</li>
+                <li>Réseau&nbsp;: NAT, accès par pont, réseau interne, et redirection de ports NAT pour joindre un service de la VM depuis l’hôte.</li>
+                <li>Point de départ de mon laboratoire personnel, complété ensuite par VMware Workstation et Proxmox VE.</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===================== SYNTHÈSE E5 ===================== -->
+  <section class="section" id="synthese" aria-labelledby="synthese-title">
+    <div class="section-head">
+      <p class="eyebrow">Épreuve E5 · bloc 1</p>
+      <h2 id="synthese-title">Tableau de synthèse</h2>
+      <p class="intro">Chaque réalisation est rattachée aux compétences du bloc&nbsp;1 qu’elle mobilise. Le jury de l’épreuve E5 s’appuie sur ce tableau pour choisir les réalisations sur lesquelles m’interroger. Un clic sur un intitulé ouvre la fiche correspondante.</p>
+    </div>
+    <div class="table-scroll">
+      <table class="synth">
+        <caption>Candidat&nbsp;: KOUNKOUD Yann · ESUP Puteaux · option SISR · session 2027</caption>
+        <thead>
+          <tr>
+            <th scope="col">Réalisation professionnelle</th>
+            <th scope="col">Période</th>
+            <th scope="col" class="c"><abbr title="Gérer le patrimoine informatique">Patri&shy;moine</abbr></th>
+            <th scope="col" class="c"><abbr title="Répondre aux incidents et aux demandes d’assistance et d’évolution">Inci&shy;dents</abbr></th>
+            <th scope="col" class="c"><abbr title="Développer la présence en ligne de l’organisation">Présence en ligne</abbr></th>
+            <th scope="col" class="c"><abbr title="Travailler en mode projet">Projet</abbr></th>
+            <th scope="col" class="c"><abbr title="Mettre à disposition des utilisateurs un service informatique">Service</abbr></th>
+            <th scope="col" class="c"><abbr title="Organiser son développement professionnel">Dév. pro</abbr></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="grp"><th scope="colgroup" colspan="8">Réalisations en cours de formation</th></tr>
+          <tr><th scope="row"><a href="#rea-virtualbox">Premières machines virtuelles sous VirtualBox (NAT, redirection de ports)</a></th><td class="period">oct. 2025 → févr. 2026</td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"></td><td class="c"></td><td class="c"></td><td class="c"></td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td></tr>
+          <tr><th scope="row"><a href="#certifications">MOOC SecNumacadémie de l’ANSSI</a></th><td class="period">nov. 2025</td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"></td><td class="c"></td><td class="c"></td><td class="c"></td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td></tr>
+          <tr><th scope="row"><a href="#rea-vlan">Réseau multiservices StratAdvise&nbsp;: VLAN, ACL, DHCP, SNMP (Packet Tracer)</a></th><td class="period">févr. → mars 2026</td><td class="c"></td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"></td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"></td></tr>
+          <tr><th scope="row"><a href="#rea-ad">Contrôleur de domaine Windows Server 2019&nbsp;: domaine esn.local, OU, GPO</a></th><td class="period">janv. → avr. 2026</td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"></td><td class="c"></td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"></td></tr>
+          <tr><th scope="row"><a href="#rea-ad">Évolutions de l’annuaire&nbsp;: script PowerShell de conformité et FGPP</a></th><td class="period">mai 2026</td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"></td><td class="c"></td><td class="c"></td><td class="c"></td></tr>
+          <tr><th scope="row"><a href="#rea-glpi">Gestion de parc et de tickets avec GLPI (ITIL 4)</a></th><td class="period">mars 2026</td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"></td><td class="c"></td><td class="c"></td><td class="c"></td></tr>
+          <tr><th scope="row"><a href="#rea-snmp">Supervision SNMP&nbsp;: MIB Browser, PowerShell, Python</a></th><td class="period">mars 2026</td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"></td><td class="c"></td><td class="c"></td><td class="c"></td></tr>
+          <tr><th scope="row"><a href="#rea-portfolio">Portfolio web et profil LinkedIn</a></th><td class="period">avr. → sept. 2026</td><td class="c"></td><td class="c"></td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"></td><td class="c"></td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td></tr>
+          <tr><th scope="row"><a href="#rea-observabilite">Supervision avec Zabbix, Grafana et Loki</a></th><td class="period">juin 2026</td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"></td><td class="c"></td><td class="c"></td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"></td></tr>
+          <tr><th scope="row"><a href="#rea-negotech">Projet E6 NégoTech&nbsp;: Proxmox VE, pfSense, 4 périmètres, Active Directory</a></th><td class="period">août 2026 → en cours</td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"></td><td class="c"></td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"></td></tr>
+          <tr><th scope="row"><a href="#rea-services">Infrastructure de services&nbsp;: AD, GLPI 11, Kali (VMware)</a></th><td class="period">août 2026 → en cours</td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"></td><td class="c"></td><td class="c"></td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"></td></tr>
+          <tr><th scope="row"><a href="#rea-salle">Projet E6&nbsp;: salle de formation virtuelle</a></th><td class="period">sept. 2026 → en cours</td><td class="c"></td><td class="c"></td><td class="c"></td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"></td></tr>
+
+          <tr class="grp"><th scope="colgroup" colspan="8">Réalisations en milieu professionnel · 1<sup>re</sup> année</th></tr>
+          <tr><th scope="row"><a href="#rea-itw">ITW&nbsp;: gestion des vulnérabilités du parc avec Nexpose</a></th><td class="period">févr. 2026</td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"></td><td class="c"></td><td class="c"></td><td class="c"></td></tr>
+          <tr><th scope="row"><a href="#rea-itw">ITW&nbsp;: programme de cybersécurité BRAVE (audit, sensibilisation)</a></th><td class="period">févr. 2026</td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"></td><td class="c"></td><td class="c"></td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"></td></tr>
+          <tr><th scope="row"><a href="#rea-itw">ITW&nbsp;: traitement des incidents et demandes utilisateurs (niveau 1)</a></th><td class="period">févr. 2026</td><td class="c"></td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"></td><td class="c"></td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"></td></tr>
+          <tr><th scope="row"><a href="#rea-techbuild">Stage&nbsp;: socle VMware et PNETLab, documentation technique (TechBuild SAS)</a></th><td class="period">juil. 2026</td><td class="c"></td><td class="c"></td><td class="c"></td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"><span class="dot" role="img" aria-label="mobilisée"></span></td><td class="c"></td></tr>
+
+          <tr class="grp"><th scope="colgroup" colspan="8">Réalisations en milieu professionnel · 2<sup>e</sup> année</th></tr>
+          <tr class="todo"><td colspan="8">À compléter pendant l’alternance ou le stage de 2<sup>e</sup> année.</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><th scope="row">Réalisations par compétence</th><td></td><td class="c">11</td><td class="c">6</td><td class="c">1</td><td class="c">5</td><td class="c">9</td><td class="c">3</td></tr>
+        </tfoot>
+      </table>
+    </div>
+    <dl class="comp-legend">
+      <div><dt>Patrimoine</dt><dd>Gérer le patrimoine informatique</dd></div>
+      <div><dt>Incidents</dt><dd>Répondre aux incidents et aux demandes d’assistance et d’évolution</dd></div>
+      <div><dt>Présence en ligne</dt><dd>Développer la présence en ligne de l’organisation</dd></div>
+      <div><dt>Projet</dt><dd>Travailler en mode projet</dd></div>
+      <div><dt>Service</dt><dd>Mettre à disposition des utilisateurs un service informatique</dd></div>
+      <div><dt>Dév. pro</dt><dd>Organiser son développement professionnel</dd></div>
+    </dl>
+    <div class="synth-foot">
+      <a class="btn btn-ghost" href="docs/tableau-de-synthese.pdf" data-doc="docs/tableau-de-synthese.pdf" target="_blank" rel="noopener" hidden>Tableau officiel (PDF)</a>
+    </div>
+  </section>
+
+  <!-- ===================== COMPÉTENCES ===================== -->
+  <section class="section" id="competences" aria-labelledby="comp-title">
+    <div class="section-head">
+      <p class="eyebrow">Compétences techniques</p>
+      <h2 id="comp-title">Outils et savoir-faire</h2>
+      <p class="intro">Uniquement des outils que j’ai réellement utilisés, en formation ou en entreprise. Chaque groupe renvoie aux réalisations où je les ai mis en œuvre.</p>
+    </div>
+    <div class="skills">
+      <div class="skill">
+        <h3>Systèmes</h3>
+        <ul class="chips"><li>Windows Server 2019 et 2022</li><li>Active Directory</li><li>DNS</li><li>DHCP</li><li>GPO et FGPP</li><li>Windows 10/11</li><li>Debian 13</li><li>Ubuntu Server</li><li>Kali Linux</li></ul>
+        <p class="where">Voir <a href="#rea-ad">Active Directory</a>, <a href="#rea-negotech">NégoTech</a>, <a href="#rea-services">infrastructure de services</a>.</p>
+      </div>
+      <div class="skill">
+        <h3>Réseaux</h3>
+        <ul class="chips"><li>VLAN 802.1Q</li><li>routage inter-VLAN</li><li>ACL Cisco</li><li>Cisco IOS</li><li>pfSense</li><li>relais DHCP</li><li>adressage IPv4 et CIDR</li><li>Packet Tracer</li><li>PNETLab</li></ul>
+        <p class="where">Voir <a href="#rea-vlan">StratAdvise</a>, <a href="#rea-negotech">NégoTech</a>, <a href="#rea-techbuild">TechBuild</a>.</p>
+      </div>
+      <div class="skill">
+        <h3>Virtualisation</h3>
+        <ul class="chips"><li>Proxmox VE</li><li>VMware Workstation Pro</li><li>VirtualBox</li><li>virtualisation imbriquée</li><li>instantanés</li><li>Docker Compose (découverte)</li></ul>
+        <p class="where">Voir <a href="#rea-virtualbox">VirtualBox</a>, <a href="#rea-techbuild">TechBuild</a>, <a href="#rea-negotech">NégoTech</a>.</p>
+      </div>
+      <div class="skill">
+        <h3>Supervision et services</h3>
+        <ul class="chips"><li>Zabbix</li><li>Grafana</li><li>Loki</li><li>SNMP</li><li>MIB Browser</li><li>GLPI</li><li>Apache</li><li>MariaDB</li><li>PHP</li></ul>
+        <p class="where">Voir <a href="#rea-snmp">SNMP</a>, <a href="#rea-observabilite">Zabbix</a>, <a href="#rea-glpi">GLPI</a>.</p>
+      </div>
+      <div class="skill">
+        <h3>Sécurité</h3>
+        <ul class="chips"><li>Nexpose (Rapid7)</li><li>durcissement TLS et SNMP</li><li>moindre privilège</li><li>RGPD</li><li>analyse de risques DIC et EBIOS RM</li><li>Kali Linux</li></ul>
+        <p class="where">Voir <a href="#rea-itw">ITW</a>, <a href="#certifications">SecNumacadémie</a>.</p>
+      </div>
+      <div class="skill">
+        <h3>Scripts et méthodes</h3>
+        <ul class="chips"><li>PowerShell</li><li>Bash</li><li>Python (bases)</li><li>ITIL 4</li><li>cycle en V</li><li>cahier de recette</li><li>Kanboard</li><li>draw.io</li><li>N-able</li><li>Git</li></ul>
+        <p class="where">Voir <a href="#rea-salle">salle de formation</a>, <a href="#rea-ad">évolutions AD</a>.</p>
+      </div>
+    </div>
+    <p class="qualities"><span class="k">Qualités</span><span class="q">Sens du service et de l’écoute</span><span class="sep" aria-hidden="true">/</span><span class="q">Esprit d’équipe</span><span class="sep" aria-hidden="true">/</span><span class="q">Autonomie et rigueur</span><span class="sep" aria-hidden="true">/</span><span class="q">Curiosité technique</span></p>
+  </section>
+
+  <!-- ===================== CERTIFICATIONS ===================== -->
+  <section class="section" id="certifications" aria-labelledby="cert-title">
+    <div class="section-head">
+      <p class="eyebrow">Certifications</p>
+      <h2 id="cert-title">Certifications et formations en ligne</h2>
+      <p class="intro">L’épreuve facultative EF3 valorise un parcours de certification personnel. Mes objectifs pour 2026–2027 suivent les deux axes de mon projet&nbsp;: le réseau et la cybersécurité.</p>
+    </div>
+    <p class="cert-group">Suivies</p>
+    <ul class="certs">
+      <li class="cert">
+        <div>
+          <h3>MOOC SecNumacadémie</h3>
+          <p class="org">ANSSI · Agence nationale de la sécurité des systèmes d’information</p>
+          <p>Formation officielle de l’ANSSI aux fondamentaux de la cybersécurité&nbsp;: panorama des menaces, authentification, sécurité sur Internet, sécurité du poste de travail et des usages.</p>
+          <ul class="docs" style="margin-top:8px">
+            <li data-doc="docs/attestation-secnumacademie.pdf"><span class="doc-name">Attestation de suivi</span><span class="doc-type">PDF</span></li>
+          </ul>
+        </div>
+        <div class="cert-side"><span class="when">nov. 2025</span><span class="pill is-done">Suivi</span></div>
+      </li>
+    </ul>
+    <p class="cert-group">Objectifs 2026–2027 (EF3)</p>
+    <ul class="certs">
+      <li class="cert">
+        <div>
+          <h3>Introduction to Networks (CCNA&nbsp;1)</h3>
+          <p class="org">Cisco Networking Academy</p>
+          <p>Modèles OSI et TCP/IP, adressage IPv4 et IPv6, VLSM, configuration de base des routeurs et commutateurs Cisco.</p>
+        </div>
+        <div class="cert-side"><span class="pill is-plan">Objectif</span></div>
+      </li>
+      <li class="cert">
+        <div>
+          <h3>Introduction to Cybersecurity</h3>
+          <p class="org">Cisco Networking Academy</p>
+          <p>Menaces, attaques et principes de protection, dans le prolongement de SecNumacadémie.</p>
+        </div>
+        <div class="cert-side"><span class="pill is-plan">Objectif</span></div>
+      </li>
+      <li class="cert">
+        <div>
+          <h3>MOOC «&nbsp;L’atelier RGPD&nbsp;»</h3>
+          <p class="org">CNIL</p>
+          <p>Principes de la protection des données personnelles, utiles pour les projets NégoTech et Health4All.</p>
+        </div>
+        <div class="cert-side"><span class="pill is-plan">Objectif</span></div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ===================== VEILLE ===================== -->
+  <section class="section" id="veille" aria-labelledby="veille-title">
+    <div class="section-head">
+      <p class="eyebrow">Veille technologique · virtualisation</p>
+      <h2 id="veille-title">L’après-VMware et la montée de Proxmox VE</h2>
+    </div>
+    <div class="veille-grid">
+      <div style="display:grid;gap:28px;align-content:start">
+        <p class="question">Comment les organisations adaptent-elles leur virtualisation depuis le rachat de VMware par Broadcom, et quelle place prend Proxmox VE&nbsp;?</p>
+        <div class="prose">
+          <p>Mes maquettes sont passées de VirtualBox à VMware Workstation, puis à Proxmox VE pour mon projet E6. Ce choix d’outil suit un mouvement réel du marché, et je le suis parce qu’il touche directement le métier d’administrateur&nbsp;: coût des licences, migrations, sécurité des hyperviseurs.</p>
+        </div>
+        <dl class="method">
+          <div><dt>Sources</dt><dd>CERT-FR (avis et alertes), avis de sécurité Broadcom (VMSA), notes de version Proxmox, LeMagIT, IT-Connect</dd></div>
+          <div><dt>Outils</dt><dd>Flux RSS regroupés dans un agrégateur, alertes par mots-clés, abonnements LinkedIn</dd></div>
+          <div><dt>Traitement</dt><dd>Pour chaque information&nbsp;: la date, la source et l’impact pour une PME</dd></div>
+        </dl>
+      </div>
+      <ol class="news" aria-label="Chronologie">
+        <li><time datetime="2023-11">nov. 2023</time><div><h3>Broadcom finalise le rachat de VMware</h3><p>Premier effet visible pour les clients&nbsp;: une refonte complète de l’offre commerciale.</p></div></li>
+        <li><time datetime="2023-12">déc. 2023</time><div><h3>Fin des licences perpétuelles</h3><p>Passage à l’abonnement et regroupement des produits dans quelques offres groupées (VMware Cloud Foundation, vSphere Foundation). Pour une PME, le coût annuel devient le critère principal.</p></div></li>
+        <li><time datetime="2024-02">févr. 2024</time><div><h3>Arrêt de l’hyperviseur ESXi gratuit</h3><p>Les laboratoires et les petites structures perdent leur solution gratuite de référence.</p></div></li>
+        <li><time datetime="2024-04">avr. 2024</time><div><h3>Proxmox VE 8.2 importe les VM ESXi</h3><p>Un assistant d’import intégré facilite directement la migration depuis VMware.</p></div></li>
+        <li><time datetime="2024-05">mai 2024</time><div><h3>VMware Workstation Pro devient gratuit</h3><p>D’abord pour l’usage personnel, puis pour tous les usages en novembre 2024. C’est l’outil de mes maquettes sur poste de travail.</p></div></li>
+        <li><time datetime="2025-03">mars 2025</time><div><h3>Trois failles zero-day dans ESXi, Workstation et Fusion</h3><p>CVE-2025-22224, CVE-2025-22225 et CVE-2025-22226, exploitées avant correctif. Un hyperviseur compromis expose toutes ses VM, d’où l’importance de la gestion des correctifs que j’ai pratiquée avec Nexpose chez ITW.</p></div></li>
+        <li><time datetime="2025-08">août 2025</time><div><h3>Proxmox VE 9.0, basé sur Debian 13</h3><p>Nouvelle version majeure. J’utilise la branche&nbsp;9 et Debian&nbsp;13 dans mon projet E6.</p></div></li>
+      </ol>
+    </div>
+    <div class="takeaways">
+      <article class="takeaway">
+        <h3>Coût et dépendance</h3>
+        <p>Le changement de licences pousse les PME à comparer VMware avec Proxmox VE ou Hyper-V avant chaque renouvellement.</p>
+      </article>
+      <article class="takeaway">
+        <h3>Une alternative crédible</h3>
+        <p>Proxmox VE couvre les besoins d’une PME&nbsp;: machines KVM et conteneurs LXC, cluster, haute disponibilité et sauvegarde avec Proxmox Backup Server, sans licence obligatoire.</p>
+      </article>
+      <article class="takeaway">
+        <h3>L’hyperviseur, cible prioritaire</h3>
+        <p>Il faut appliquer les correctifs rapidement et isoler l’interface d’administration, comme le VLAN ADMIN de mon projet NégoTech.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <div class="contact">
+      <div class="section-head" style="margin-bottom:0">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">Échangeons</h2>
+        <p class="intro">Je recherche une alternance en support ou en administration systèmes et réseaux pour 2026–2027, au rythme de 3&nbsp;jours en entreprise et 2&nbsp;jours à l’école. Pour un entretien ou une question sur un projet, écrivez-moi.</p>
+      </div>
+      <div class="channels">
+        <div class="channel">
+          <span class="k">E-mail</span>
+          <div class="v"><span class="mail" id="mail">kounkoudyann@gmail.com</span><button class="copy-btn" type="button" id="copy-mail">Copier</button></div>
+          <p class="copy-status" id="copy-status" aria-live="polite"></p>
+        </div>
+        <div class="channel">
+          <span class="k">LinkedIn</span>
+          <div class="v"><a href="https://www.linkedin.com/in/yannkounkoud-2857033170" target="_blank" rel="noopener">linkedin.com/in/yannkounkoud-2857033170</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>Yann Kounkoud · BTS SIO option SISR · ESUP Puteaux</span>
+    <span>Mis à jour le 25 septembre 2026</span>
+  </div>
+</footer>
+</div>
+
+<script>
+(function () {
+  document.documentElement.lang = 'fr';
+
+  /* Menu mobile */
+  var menuBtn = document.getElementById('menu-btn');
+  var nav = document.getElementById('nav');
+  function closeMenu() { nav.classList.remove('is-open'); menuBtn.setAttribute('aria-expanded', 'false'); }
+  menuBtn.addEventListener('click', function () {
+    var open = nav.classList.toggle('is-open');
+    menuBtn.setAttribute('aria-expanded', String(open));
+  });
+  nav.addEventListener('click', function (e) { if (e.target.closest('a')) closeMenu(); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && nav.classList.contains('is-open')) { closeMenu(); menuBtn.focus(); }
+  });
+
+  /* Section active dans le menu */
+  var links = Array.prototype.slice.call(nav.querySelectorAll('a[href^="#"]'));
+  if ('IntersectionObserver' in window) {
+    var byId = {};
+    links.forEach(function (a) { byId[a.getAttribute('href').slice(1)] = a; });
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        links.forEach(function (l) { l.removeAttribute('aria-current'); });
+        var a = byId[en.target.id];
+        if (a) a.setAttribute('aria-current', 'true');
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    Object.keys(byId).forEach(function (id) { var s = document.getElementById(id); if (s) spy.observe(s); });
+  }
+
+  /* Filtres des réalisations */
+  var items = Array.prototype.slice.call(document.querySelectorAll('.rea[data-cat]'));
+  var buttons = Array.prototype.slice.call(document.querySelectorAll('.filters button'));
+  var status = document.getElementById('filter-status');
+  function countFor(cat) { return cat === 'all' ? items.length : items.filter(function (i) { return i.dataset.cat === cat; }).length; }
+  function applyFilter(cat) {
+    buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.filter === cat)); });
+    items.forEach(function (i) { i.hidden = !(cat === 'all' || i.dataset.cat === cat); });
+    var n = countFor(cat);
+    status.textContent = n + (n > 1 ? ' réalisations affichées' : ' réalisation affichée');
+  }
+  buttons.forEach(function (b) {
+    var c = b.querySelector('.count');
+    if (c) c.textContent = countFor(b.dataset.filter);
+    b.addEventListener('click', function () { applyFilter(b.dataset.filter); });
+  });
+
+  /* Lien direct vers une fiche : l'afficher et l'ouvrir */
+  function openFromHash() {
+    var id = location.hash.slice(1);
+    if (!id) return;
+    var el = document.getElementById(id);
+    if (!el || !el.classList.contains('rea')) return;
+    var wasHidden = el.hidden;
+    if (wasHidden) applyFilter('all');
+    var d = el.querySelector('details');
+    if (d) d.open = true;
+    if (wasHidden) el.scrollIntoView({ block: 'start' });
+  }
+  window.addEventListener('hashchange', openFromHash);
+  openFromHash();
+
+  /* Copier l'adresse e-mail */
+  var copyBtn = document.getElementById('copy-mail');
+  var mail = document.getElementById('mail');
+  var copyStatus = document.getElementById('copy-status');
+  function selectMail() {
+    var r = document.createRange(); r.selectNodeContents(mail);
+    var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+  }
+  copyBtn.addEventListener('click', function () {
+    var text = mail.textContent.trim();
+    function fallback() { selectMail(); copyStatus.textContent = 'Adresse sélectionnée : copiez-la avec Ctrl+C.'; }
+    try {
+      navigator.clipboard.writeText(text).then(function () { copyStatus.textContent = 'Adresse copiée.'; }, fallback);
+    } catch (e) { fallback(); }
+  });
+
+  /* Documents : un lien apparaît seulement si le fichier existe à côté de la page */
+  var docs = Array.prototype.slice.call(document.querySelectorAll('[data-doc]'));
+  function linkify(el) {
+    if (el.tagName === 'A') { el.hidden = false; return; }
+    var name = el.querySelector('.doc-name');
+    if (!name) return;
+    var a = document.createElement('a');
+    a.href = el.dataset.doc; a.target = '_blank'; a.rel = 'noopener';
+    a.textContent = name.textContent;
+    name.replaceWith(a);
+  }
+  if (location.protocol === 'file:') {
+    docs.forEach(linkify);
+  } else if (location.protocol.indexOf('http') === 0 && window.fetch) {
+    docs.forEach(function (el) {
+      fetch(el.dataset.doc, { method: 'HEAD' }).then(function (r) {
+        var type = r.headers.get('content-type') || '';
+        if (r.ok && type.indexOf('text/html') === -1) linkify(el);
+      }).catch(function () {});
+    });
+  }
+
+  /* Impression : tout déplier */
+  window.addEventListener('beforeprint', function () {
+    document.querySelectorAll('details').forEach(function (d) { d.open = true; });
+  });
+})();
+</script>
+</body>
+</html>
