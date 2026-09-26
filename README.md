@@ -2,6 +2,8 @@
 
 Portfolio de Yann Kounkoud, étudiant en 2e année de BTS SIO option SISR à l'ESUP Puteaux (session 2027) : projets de l'épreuve E6, stages, tableau de synthèse de l'épreuve E5, compétences et certifications.
 
+**Site en ligne : https://1tlo-tech.github.io/kounkoud-yann/**
+
 ## Contenu du dépôt
 
 - `index.html` : le site complet (HTML, CSS et JavaScript dans un seul fichier, sans dépendance). Thème clair ou sombre selon l'appareil, lisible sur mobile.
